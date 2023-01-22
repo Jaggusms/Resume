@@ -79,7 +79,7 @@ with col2:
 with col1:
     st.title("JAGADEESH SANNIBOINA")
     st.markdown(':heart_eyes: :wave: <p style=" color:Blue; ">B-Tech 2017-2021</p>', unsafe_allow_html=True)
-    st.markdown('''<p style=" color:black; " >
+    st.markdown('''<p style=" color:white; " >
                 I am a Machine Learning Engineer who insights into Deep Learning, Neural Networks, Computer Vision and Natural Language Processing.
                 I am extending myself towards Could, Data Engineering and Science to archive a full stack Machine Learner. 
                 I am Multitasking and Problem Solver.</p>''', unsafe_allow_html=True)
