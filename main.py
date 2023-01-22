@@ -3,7 +3,6 @@ from PIL import Image
 import base64
 from pathlib import Path
 import streamlit_nested_layout
-import streamlit.components.v1 as components  # Import Streamlit
 PAGE_TITLE = "Jagadeesh Digital Resume"
 PAGE_ICON = "source/pageicon.png"
 st.set_page_config(page_title=PAGE_TITLE, page_icon=PAGE_ICON,layout="wide")
