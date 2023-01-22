@@ -8,6 +8,7 @@ st.set_page_config(page_title=PAGE_TITLE, page_icon=PAGE_ICON,layout="wide")
 st.markdown("""
 <style>
 #MainMenu {visibility:hidden}
+header {visibility: hidden}
 footer {visibility: hidden}
 .css-15zrgzn {display: none}
 button[title="View fullscreen"]{
@@ -78,15 +79,15 @@ with col2:
     st.image('source/ProfilePic.png', caption=None, width=150)
 with col1:
     st.title("JAGADEESH SANNIBOINA")
-    st.markdown('<p style=" color:Blue; ">B-Tech 2017-2021</p>', unsafe_allow_html=True)
-    st.write(''':heart_eyes:I am a Machine Learning Engineer who insights into Deep Learning, Neural Networks, Computer Vision
+    st.markdown(':heart_eyes: :wave: <p style=" color:Blue; ">B-Tech 2017-2021</p>', unsafe_allow_html=True)
+    st.write('''I am a Machine Learning Engineer who insights into Deep Learning, Neural Networks, Computer Vision
     and Natural Language Processing. I am extending myself towards Could, Data Engineering and Science
     to archive a full stack Machine Learner. I am Multitasking and Problem Solver.''')
     #cols=st.columns(len(social_meadia),gap="small")
-    cols = st.columns(len(social_meadia),gap="small")
-    for idx,(platform,link) in enumerate(social_meadia.items()):
-        cols[idx].write(f"[{platform}]({link})")
-    
+cols = st.columns(len(social_meadia),gap="small")
+for idx,(platform,link) in enumerate(social_meadia.items()):
+    cols[idx].write(f"[{platform}]({link})")
+
 # st.write('\n')
 # st.markdown('<h3 style=" color:black; ">Experience & Qulifications</h3>', unsafe_allow_html=True)
 # with open('html/img.html')as f:
