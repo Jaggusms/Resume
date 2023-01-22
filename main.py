@@ -29,7 +29,7 @@ def add_bg_from_local(image_file):
     """,
     unsafe_allow_html=True
     )
-add_bg_from_local('source/wte.jpg')  
+#add_bg_from_local('source/wte.jpg')  
 st.markdown("""
         <style>
                .css-18e3th9 {
@@ -80,8 +80,8 @@ with col2:
     st.image('source/ProfilePic.png', caption=None, width=150)
 with col1:
     st.title("JAGADEESH SANNIBOINA")
-    st.markdown(':heart_eyes: :wave: <p style=" color:Blue; ">B-Tech 2017-2021</p>', unsafe_allow_html=True)
-    st.markdown('''<p style=" color:skyblue; " >
+    st.markdown(':heart_eyes: :wave: <p style="; ">B-Tech 2017-2021</p>', unsafe_allow_html=True)
+    st.markdown('''<p style="  " >
                 I am a Machine Learning Engineer who insights into Deep Learning, Neural Networks, Computer Vision and Natural Language Processing.
                 I am extending myself towards Could, Data Engineering and Science to archive a full stack Machine Learner. 
                 I am Multitasking and Problem Solver.</p>''', unsafe_allow_html=True)
@@ -97,7 +97,7 @@ def get_img_with_href(local_img_path, target_url):
     bin_str = get_base64_of_bin_file(local_img_path)
     html_code = f'''
         <a href="{target_url}">
-            <img src="data:image/{img_format};base64,{bin_str}" width="25"/>
+            <img align="left" src="data:image/{img_format};base64,{bin_str}" width="25"/>
         </a>'''
     return html_code
 cols = st.columns(5,gap="large")
