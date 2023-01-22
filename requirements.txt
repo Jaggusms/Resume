@@ -1,4 +1,4 @@
 PIL
 streamlit
 pathlib
-streamlit_nested_layout
+streamlit-nested-layout
