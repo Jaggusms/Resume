@@ -69,7 +69,7 @@ social_meadia={
     "source/twitter.png":"https://twitter.com/SanniboinaJ?t=Mw1069Dj1N5G0-kLGmCMKw",
     "source/hacker_rank.png": "https://www.hackerrank.com/sanniboinajagad1",
     "source/hacker_earth.png":"https://www.hackerearth.com/@jagadeesh220",
-    "source/insta.png":"https://www.instagram.com/forgot_your_login_details/"
+    "source/insta.png":"https://www.instagram.com/forgot_your_login_details/",
     "source/facebook.png": "https://www.facebook.com/jagadeesh.sanniboina.3/"
 }
 
