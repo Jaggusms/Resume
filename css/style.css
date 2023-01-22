@@ -4,10 +4,10 @@ body {
   h1 {
     color: rgb(181, 81, 38);
   }
-  p {
-    color: rgb(182, 189, 86);
-  }
-  ul[class="css-wjbhl0 e1fqkh3o9"]{
+p{
+    color:black;
+}
+ul[class="css-wjbhl0 e1fqkh3o9"]{
     position: relative;
     padding-top: 2rem;
     display: flex;
