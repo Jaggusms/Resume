@@ -1,4 +1,5 @@
+pip
 PIL
 streamlit
-pathlib
 streamlit-nested-layout
+
