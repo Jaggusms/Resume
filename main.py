@@ -98,7 +98,7 @@ def get_img_with_href(local_img_path, target_url):
             <img src="data:image/{img_format};base64,{bin_str}" width="25"/>
         </a>'''
     return html_code
-cols = st.columns(4,gap="small")
+cols = st.columns(4,gap="large")
 for idx,(platform,link) in enumerate(social_meadia.items()):
     #cols[idx%4].write(f"[{platform}]({link})")
     #cols[idx%4].markdown(f"[![linkdin]({platform})]({link})")
