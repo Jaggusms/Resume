@@ -68,7 +68,8 @@ social_meadia={
     "source/stackoverflow.png":"https://stackoverflow.com/users/9774886/jagadeesh-sanniboina?tab=profile",
     "source/twitter.png":"https://twitter.com/SanniboinaJ?t=Mw1069Dj1N5G0-kLGmCMKw",
     "source/hacker_rank.png": "https://www.hackerrank.com/sanniboinajagad1",
-    "source/hacker_earth.png":"https://www.hackerearth.com/@jagadeesh220"
+    "source/hacker_earth.png":"https://www.hackerearth.com/@jagadeesh220",
+    "source/insta.png":"https://www.instagram.com/forgot_your_login_details/"
 }
 
 #col1, col2 = st.columns([3, 1],gap='small')
