@@ -1,8 +1,7 @@
 import streamlit as st
 from PIL import Image
 import base64
-from pathlib import Path
-import streamlit_nested_layout
+
 PAGE_TITLE = "Jagadeesh Digital Resume"
 PAGE_ICON = "source/pageicon.png"
 st.set_page_config(page_title=PAGE_TITLE, page_icon=PAGE_ICON,layout="wide")
@@ -72,17 +71,19 @@ social_meadia={
     "HackerEarth":"https://www.hackerearth.com/@jagadeesh220"
 }
 
-col1, col2 = st.columns([3, 1],gap='small')
+#col1, col2 = st.columns([3, 1],gap='small')
+col1,col2 = st.columns([3,1],gap="small")
 with col2:
     #st.markdown(img_to_html('source/ProfilePic.png'), unsafe_allow_html=True)
     st.image('source/ProfilePic.png', caption=None, width=150)
 with col1:
     st.title("JAGADEESH SANNIBOINA")
     st.markdown('<p style=" color:Blue; ">B-Tech 2017-2021</p>', unsafe_allow_html=True)
-    st.write('''I am a Machine Learning Engineer who insights into Deep Learning, Neural Networks, Computer Vision
+    st.write(''':heart_eyes:I am a Machine Learning Engineer who insights into Deep Learning, Neural Networks, Computer Vision
     and Natural Language Processing. I am extending myself towards Could, Data Engineering and Science
     to archive a full stack Machine Learner. I am Multitasking and Problem Solver.''')
-    cols=st.columns(len(social_meadia),gap="small")
+    #cols=st.columns(len(social_meadia),gap="small")
+    cols = st.columns(len(social_meadia),gap="small")
     for idx,(platform,link) in enumerate(social_meadia.items()):
         cols[idx].write(f"[{platform}]({link})")
     
