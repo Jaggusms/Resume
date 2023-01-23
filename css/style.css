@@ -5,8 +5,18 @@
 }
 
 .stDownloadButton button:hover, div.stButton > button:hover {
-    background-color: #b1cdd6;
+    background-color: #5b6f76;
     color:#000000;
+}
+.stTabs, div.stTabs {text-align:left}
+.stTabs button, div.stTabs > button:first-child {
+    background-color: #354647;
+    color:#000000;
+}
+
+.stTabs button:hover, div.st.Tabs > button:hover {
+  background-color: #415657;
+  color:#000000;
 }
 [data-testid=column]:nth-of-type(1) [data-testid=stVerticalBlock]{
   gap: 0.25rem;
@@ -18,7 +28,7 @@ ul {
   flex-direction: column;
   gap: 30px; 
 }
-/* .css-18e3th9 {
+.css-18e3th9 {
 padding-top: 0rem;
 padding-bottom: 10rem;
 padding-left: 5rem;
@@ -29,7 +39,7 @@ padding-right: 5rem;
  padding-right: 1rem;
   padding-bottom: 3.5rem;
 padding-left: 1rem;  
-} */
+}
 #MainMenu {visibility:hidden}
 header {visibility: hidden}
 footer {visibility: hidden}
