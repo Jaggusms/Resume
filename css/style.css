@@ -1,11 +1,11 @@
 body {
-    background-color: powderblue;
+    background-color: rgb(255, 253, 253);
   }
   h1 {
-    color: rgb(250, 248, 248);
+    color: rgb(245, 241, 241);
   }
 p{
-    color:rgb(241, 244, 245);
+    color:rgb(247, 249, 249);
 }
 ul[class="css-wjbhl0 e1fqkh3o9"]{
     position: relative;

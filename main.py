@@ -29,7 +29,7 @@ def add_bg_from_local(image_file):
     """,
     unsafe_allow_html=True
     )
-#add_bg_from_local('source/wte.jpg')  
+add_bg_from_local('source/charcoal.png')  
 st.markdown("""
         <style>
                .css-18e3th9 {
@@ -62,7 +62,7 @@ def img_to_html(img_path):
   return "<img src='data:image/png;base64,{}' class='img-fluid'>  ".format(img_to_bytes(img_path))
 social_meadia={
     "source/linkdin.png":"https://www.linkedin.com/in/jagadeesh-sanniboina-a8096816b/",
-    "source/github.png":"https://github.com/Jaggusms",
+    "source/github_logo.png":"https://github.com/Jaggusms",
     "source/kaggle.png":"https://www.kaggle.com/jagadeeshsanniboina",
     "source/medium.png": "https://medium.com/@jagadeeshmk",
     "source/stackoverflow.png":"https://stackoverflow.com/users/9774886/jagadeesh-sanniboina?tab=profile",
