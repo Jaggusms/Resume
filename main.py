@@ -68,7 +68,7 @@ with tab1s[0]:
     col1,col2 ,col3= st.columns([2,1,0.5],gap="medium")
     with col2:
         #st.markdown(img_to_html('source/ProfilePic.png'), unsafe_allow_html=True)
-        st.image('source/ProfilePic.png', caption=None, width=250)
+        st.image('source/ProfilePic.png', caption=None, width=200)
     with col1:
         st.markdown("<p style='font-family:sans-serif; font-size: 20px;'>Hello, I'm</p>", unsafe_allow_html=True)
         st.markdown('<p style="font-family:sans-serif; font-size: 42px;"><i>JAGADEESH SANNIBOINA<i></p>', unsafe_allow_html=True)
