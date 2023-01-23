@@ -10,8 +10,9 @@ st.markdown("""
 header {visibility: hidden}
 footer {visibility: hidden}
 .css-15zrgzn {display: none}
-button[title="View fullscreen"]{
-    visibility: hidden;}
+.css-eczf16 {display: none}
+.css-jn99sy {display: none}
+button[title="View fullscreen"]{visibility: hidden;}
 </style>
 """,unsafe_allow_html=True)
 def add_bg_from_local(image_file):
