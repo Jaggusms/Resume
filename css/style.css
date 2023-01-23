@@ -1,3 +1,42 @@
+.stDownloadButton, div.stButton {text-align:center}
+.stDownloadButton button, div.stButton > button:first-child {
+    background-color: #5b6f76;
+    color:#000000;
+}
+
+.stDownloadButton button:hover, div.stButton > button:hover {
+    background-color: #b1cdd6;
+    color:#000000;
+}
+[data-testid=column]:nth-of-type(1) [data-testid=stVerticalBlock]{
+  gap: 0.25rem;
+}
+ul {
+  padding: 1px 100px 1px 100px; 
+  padding-left: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px; 
+}
+/* .css-18e3th9 {
+padding-top: 0rem;
+padding-bottom: 10rem;
+padding-left: 5rem;
+padding-right: 5rem;
+}
+.css-1d391kg {
+ padding-top: 3.5rem;
+ padding-right: 1rem;
+  padding-bottom: 3.5rem;
+padding-left: 1rem;  
+} */
+#MainMenu {visibility:hidden}
+header {visibility: hidden}
+footer {visibility: hidden}
+.css-15zrgzn {display: none}
+.css-eczf16 {display: none}
+.css-jn99sy {display: none}
+button[title="View fullscreen"]{visibility: hidden;}
 body {
     background-color: rgb(255, 253, 253);
   }
