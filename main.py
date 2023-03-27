@@ -75,7 +75,7 @@ with tab1s[0]:
         "source/MITS.jpg": "https://mits.ac.in/",
         "source/APRJC.png" : "https://aprs.apcfss.in/",
         "source/ZPPH.png"  : "https://spsnellore.ap.gov.in/public-utility/28193202104-zphs-kondagunta-gudur-mandal/",
-        "source/location_zpph": "https://www.google.com/search?sa=X&sxsrf=APwXEdcV3mCrdPe2UCLDddjKo8RlJdzIrw:1679916405912&q=zphs%20kondagunta&ved=2ahUKEwjqq4GlgPz9AhWZT2wGHeMUDtwQvS56BAgNEAE&biw=1536&bih=722&dpr=1.25&tbs=lf:1,lf_ui:2&tbm=lcl&rflfq=1&num=10&rldimm=12117752634591421153&lqi=Cg96cGhzIGtvbmRhZ3VudGGSARFnb3Zlcm5tZW50X3NjaG9vbKoBLRABKggiBHpwaHMoADIfEAEiG0nnG-F6zaT3nZroOIF2r_lDLRIL5_QB_3GJpQ&rlst=f#rlfi=hd:;si:12117752634591421153,l,Cg96cGhzIGtvbmRhZ3VudGGSARFnb3Zlcm5tZW50X3NjaG9vbKoBLRABKggiBHpwaHMoADIfEAEiG0nnG-F6zaT3nZroOIF2r_lDLRIL5_QB_3GJpQ;mv:[[14.0827978,79.7940246],[14.0814695,79.7926437]];tbs:lrf:!1m4!1u2!2m2!2m1!1e1!2m1!1e2!3sIAE,lf:1,lf_ui:2",
+        "source/location_zpph": "https://www.google.com/maps/place/Zilla+Parishad+High+School/@14.0816058,79.7909562,17z/data=!4m10!1m2!2m1!1sZPHS+Kondagunta,+Andhra+Pradesh!3m6!1s0x3a4ce1ce312463bd:0xa82ae7d18ce022e1!8m2!3d14.0815407!4d79.7927177!15sCh9aUEhTIEtvbmRhZ3VudGEsIEFuZGhyYSBQcmFkZXNokgERZ292ZXJubWVudF9zY2hvb2zgAQA!16s%2Fg%2F11g8y97071",
         "source/location_aprjc":"https://www.google.com/maps/place/A+P+Residential+Junior+College+For+Boys/@13.943345,79.592139,17z/data=!3m1!4b1!4m6!3m5!1s0x3a4d25b79cabd9ad:0x2bebd90682c4fa76!8m2!3d13.943345!4d79.5943277!16s%2Fg%2F1q69wq87s",
         "source/location_btech" : "https://www.google.com/maps/place/Madanapalle+institute+of+technology+and+Science/@13.6296148,78.47635,17z/data=!3m1!4b1!4m6!3m5!1s0x3bb2677c83886ad7:0xad73159e2bddda33!8m2!3d13.6296148!4d78.4785387!16s%2Fm%2F010hplvm"
     }
@@ -228,8 +228,16 @@ with tab1s[3]:
     st.markdown("<p style='font-family:sans-serif; font-size: 25px;' ><b> yet to create<b> </p>", unsafe_allow_html=True)
 
 with tab1s[4]:
-    st.markdown("<p style='font-family:sans-serif; font-size: 20px;' > 1. Programming Language : <br style='color:#EAEFF5'/>Python <Br> 2. Machine Learning <Br> 3. Natural Laguage Processing </p>", unsafe_allow_html=True)
+    #st.markdown("<p style='font-family:sans-serif; font-size: 20px;' > 1. Programming Language : <br style='color:#EAEFF5'/>Python <Br> 2. Machine Learning <Br> 3. Natural Laguage Processing </p>", unsafe_allow_html=True)
+    #st.markdown("")
+    st.write("Programming languages: "+"&nbsp;"*5+"Python(professional)"+"&nbsp;"*5+"R(Basic)")
+    st.write("Libraries in Python as follows: ")        
+    skills=[("Pandas",5),("Numpy",5),("Pyspark",4),("Scikit-Learn",4),("Nltk",3),("Keras",3),("Open-CV",3),("Flask ",4),("Streamlit",4)]
 
+    for library,rating in skills:
+        #st.markdown("&nbsp;"*10+" :point_right: "+"&nbsp;"*5+library+"&nbsp;"*(25-len(library))+" :star:"*rating+"&nbsp;"*5+str(rating)+"/"+"5")
+        st.markdown("&nbsp;"*20+" :point_right: "+"&nbsp;"*5+library+"&nbsp;"*(25-len(library))+" :star:"*rating)
+      
 
 with tab1s[5]:
     st.markdown("<p style='font-family:sans-serif; font-size: 20px;' > <b> yet to create<b>  </p>", unsafe_allow_html=True)
