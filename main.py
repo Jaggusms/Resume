@@ -73,8 +73,8 @@ with tab1s[0]:
         "source/insta.png":"https://www.instagram.com/forgot_your_login_details/",
         "source/facebook.png": "https://www.facebook.com/jagadeesh.sanniboina.3/",
         "source/MITS.jpg": "https://mits.ac.in/",
-        "source/aprjc.png" : "https://aprs.apcfss.in/",
-        "source/zpph.png"  : "https://spsnellore.ap.gov.in/public-utility/28193202104-zphs-kondagunta-gudur-mandal/",
+        "source/APRJC.png" : "https://aprs.apcfss.in/",
+        "source/ZPPH.png"  : "https://spsnellore.ap.gov.in/public-utility/28193202104-zphs-kondagunta-gudur-mandal/",
         "source/location_zpph": "https://www.google.com/search?sa=X&sxsrf=APwXEdcV3mCrdPe2UCLDddjKo8RlJdzIrw:1679916405912&q=zphs%20kondagunta&ved=2ahUKEwjqq4GlgPz9AhWZT2wGHeMUDtwQvS56BAgNEAE&biw=1536&bih=722&dpr=1.25&tbs=lf:1,lf_ui:2&tbm=lcl&rflfq=1&num=10&rldimm=12117752634591421153&lqi=Cg96cGhzIGtvbmRhZ3VudGGSARFnb3Zlcm5tZW50X3NjaG9vbKoBLRABKggiBHpwaHMoADIfEAEiG0nnG-F6zaT3nZroOIF2r_lDLRIL5_QB_3GJpQ&rlst=f#rlfi=hd:;si:12117752634591421153,l,Cg96cGhzIGtvbmRhZ3VudGGSARFnb3Zlcm5tZW50X3NjaG9vbKoBLRABKggiBHpwaHMoADIfEAEiG0nnG-F6zaT3nZroOIF2r_lDLRIL5_QB_3GJpQ;mv:[[14.0827978,79.7940246],[14.0814695,79.7926437]];tbs:lrf:!1m4!1u2!2m2!2m1!1e1!2m1!1e2!3sIAE,lf:1,lf_ui:2",
         "source/location_aprjc":"https://www.google.com/maps/place/A+P+Residential+Junior+College+For+Boys/@13.943345,79.592139,17z/data=!3m1!4b1!4m6!3m5!1s0x3a4d25b79cabd9ad:0x2bebd90682c4fa76!8m2!3d13.943345!4d79.5943277!16s%2Fg%2F1q69wq87s",
         "source/location_btech" : "https://www.google.com/maps/place/Madanapalle+institute+of+technology+and+Science/@13.6296148,78.47635,17z/data=!3m1!4b1!4m6!3m5!1s0x3bb2677c83886ad7:0xad73159e2bddda33!8m2!3d13.6296148!4d78.4785387!16s%2Fm%2F010hplvm"
@@ -173,7 +173,7 @@ with tab1s[1]:
     with cols[0]:
         #st.write(":classical_building:")
         st.markdown("#")
-        gif_html = get_img_with_href("source/aprjc.png", social_meadia["source/aprjc.png"])
+        gif_html = get_img_with_href("source/APRJC.png", social_meadia["source/APRJC.png"])
         st.markdown(gif_html, unsafe_allow_html=True)
     with cols[1]:
         st.markdown("<p style='font-family:sans-serif; font-size: 18px;'><b> Intermediate (2015-2017)<b> </p>", unsafe_allow_html=True)
@@ -198,7 +198,7 @@ with tab1s[1]:
     with cols[0]:
         #st.write(":classical_building:")
         st.markdown("#")
-        gif_html = get_img_with_href("source/zpph.png", social_meadia["source/zpph.png"])
+        gif_html = get_img_with_href("source/ZPPH.png", social_meadia["source/ZPPH.png"])
         st.markdown(gif_html, unsafe_allow_html=True)
     with cols[1]:
         st.markdown("<p style='font-family:sans-serif; font-size: 18px;'><b>SSC:10th (2014-2015)<b> </p>", unsafe_allow_html=True)
