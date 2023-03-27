@@ -2,6 +2,7 @@ import streamlit as st
 from PIL import Image
 import base64,os
 PAGE_TITLE = "Jagadeesh Digital Resume"
+
 PAGE_ICON = "source/pageicon.png"
 st.set_page_config(page_title=PAGE_TITLE, page_icon=PAGE_ICON,layout="wide")
 st.get_option("theme.primaryColor")
@@ -15,12 +16,12 @@ def add_bg_from_local(image_file):
         background-size: cover
     }}</style>""",unsafe_allow_html=True)
 add_bg_from_local('source/charcoal.png') 
-@st.cache(allow_output_mutation=True)
+@st.cache_resource()
 def get_base64_of_bin_file(bin_file):
     with open(bin_file, 'rb') as f:
         data = f.read()
     return base64.b64encode(data).decode()
-@st.cache(allow_output_mutation=True)
+@st.cache_resource()
 def get_img_with_href(local_img_path, target_url):
     img_format = os.path.splitext(local_img_path)[-1].replace('.', '')
     bin_str = get_base64_of_bin_file(local_img_path)
@@ -28,7 +29,16 @@ def get_img_with_href(local_img_path, target_url):
         <a href="{target_url}">
             <img align="left" src="data:image/{img_format};base64,{bin_str}" width="25"/>
         </a>'''
-    return html_code 
+    return html_code
+#@st.cache_resource() 
+def get_img_with_href_message(local_img_path, target_url,message):
+    img_format = os.path.splitext(local_img_path)[-1].replace('.', '')
+    bin_str = get_base64_of_bin_file(local_img_path)
+    html_code = f'''
+        <p><a href="{target_url}">
+            <img align="left" src="data:image/{img_format};base64,{bin_str}" width="25"/>
+        </a>{message}</p>'''
+    return html_code
 def get_img(local_img_path,message):
     img_format = os.path.splitext(local_img_path)[-1].replace('.', '')
     bin_str = get_base64_of_bin_file(local_img_path)
@@ -61,7 +71,13 @@ with tab1s[0]:
         "source/hacker_rank.png": "https://www.hackerrank.com/sanniboinajagad1",
         "source/hacker_earth.png":"https://www.hackerearth.com/@jagadeesh220",
         "source/insta.png":"https://www.instagram.com/forgot_your_login_details/",
-        "source/facebook.png": "https://www.facebook.com/jagadeesh.sanniboina.3/"
+        "source/facebook.png": "https://www.facebook.com/jagadeesh.sanniboina.3/",
+        "source/mits.jpg": "https://mits.ac.in/",
+        "source/aprjc.png" : "https://aprs.apcfss.in/",
+        "source/zpph.png"  : "https://spsnellore.ap.gov.in/public-utility/28193202104-zphs-kondagunta-gudur-mandal/",
+        "source/location_zpph": "https://www.google.com/search?sa=X&sxsrf=APwXEdcV3mCrdPe2UCLDddjKo8RlJdzIrw:1679916405912&q=zphs%20kondagunta&ved=2ahUKEwjqq4GlgPz9AhWZT2wGHeMUDtwQvS56BAgNEAE&biw=1536&bih=722&dpr=1.25&tbs=lf:1,lf_ui:2&tbm=lcl&rflfq=1&num=10&rldimm=12117752634591421153&lqi=Cg96cGhzIGtvbmRhZ3VudGGSARFnb3Zlcm5tZW50X3NjaG9vbKoBLRABKggiBHpwaHMoADIfEAEiG0nnG-F6zaT3nZroOIF2r_lDLRIL5_QB_3GJpQ&rlst=f#rlfi=hd:;si:12117752634591421153,l,Cg96cGhzIGtvbmRhZ3VudGGSARFnb3Zlcm5tZW50X3NjaG9vbKoBLRABKggiBHpwaHMoADIfEAEiG0nnG-F6zaT3nZroOIF2r_lDLRIL5_QB_3GJpQ;mv:[[14.0827978,79.7940246],[14.0814695,79.7926437]];tbs:lrf:!1m4!1u2!2m2!2m1!1e1!2m1!1e2!3sIAE,lf:1,lf_ui:2",
+        "source/location_aprjc":"https://www.google.com/maps/place/A+P+Residential+Junior+College+For+Boys/@13.943345,79.592139,17z/data=!3m1!4b1!4m6!3m5!1s0x3a4d25b79cabd9ad:0x2bebd90682c4fa76!8m2!3d13.943345!4d79.5943277!16s%2Fg%2F1q69wq87s",
+        "source/location_btech" : "https://www.google.com/maps/place/Madanapalle+institute+of+technology+and+Science/@13.6296148,78.47635,17z/data=!3m1!4b1!4m6!3m5!1s0x3bb2677c83886ad7:0xad73159e2bddda33!8m2!3d13.6296148!4d78.4785387!16s%2Fm%2F010hplvm"
     }
 
     #col1, col2 = st.columns([3, 1],gap='small')
@@ -79,7 +95,7 @@ with tab1s[0]:
         st.markdown(gif_html, unsafe_allow_html=True)
         gif_html = get_img("source/contact.png",". 8500060896")
         st.markdown(gif_html, unsafe_allow_html=True)
-        gif_html = get_img("source/location.png",". Nellore,AP, India")
+        gif_html = get_img("source/location.png",". Tirupati, AP, India")
         st.markdown(gif_html, unsafe_allow_html=True)
     cols = st.columns([0.5 if i in [0,1,2]  else 3 if i==7 else 1 for i in range(10) ],gap="large")
     with cols[0]:
@@ -126,9 +142,100 @@ with tab1s[0]:
     # st.markdown('<h3 style=" color:black; ">Experience & Qulifications</h3>', unsafe_allow_html=True)
     # with open('html/img.html')as f:
     #  st.markdown(f"<html>{f.read()}</html>", unsafe_allow_html = True)
+with tab1s[1]:
+
+    cols = st.columns([0.08,1,1.8,1.5],gap="large")
+    with cols[0]:
+        #st.write(":classical_building:")
+        st.markdown("#")
+        gif_html = get_img_with_href("source/mits.jpg", social_meadia["source/mits.jpg"])
+        st.markdown(gif_html, unsafe_allow_html=True)
+    with cols[1]:
+        st.markdown("<p style='font-family:sans-serif; font-size: 18px;'><b> B-Tech(2017-2021)<b> </p>", unsafe_allow_html=True)
+    with cols[-2]:
+        #st.markdown("<p style='font-family:sans-serif; font-size: 15px;'>Madanapalle Institute of Technology and Sciences </p>", unsafe_allow_html=True)
+        
+        st.write('Institute: Madanapalle Institute of Technology and Sciences')
+        st.write("Course: Electrical and Electronics Engineering")
+        st.write("CGPA: 8.3")
+    with cols[-1]:
+       #st.write("source/location_btech") 
+        st.write('''Adress:                                
+                Kadiri Road, Angallu Village                                 
+                Madanapalle,                                     
+                Andhra Pradesh 517325''')
+        #gif_html = get_img("source/location.png",". Tirupati, AP, India")
+        gif_html = get_img_with_href_message("source/location.png", social_meadia["source/location_btech"],"Location")
+        st.markdown(gif_html, unsafe_allow_html=True)
+
+    
+    cols = st.columns([0.08,1,1.8,1.5],gap="large")
+    with cols[0]:
+        #st.write(":classical_building:")
+        st.markdown("#")
+        gif_html = get_img_with_href("source/aprjc.png", social_meadia["source/aprjc.png"])
+        st.markdown(gif_html, unsafe_allow_html=True)
+    with cols[1]:
+        st.markdown("<p style='font-family:sans-serif; font-size: 18px;'><b> Intermediate (2015-2017)<b> </p>", unsafe_allow_html=True)
+    with cols[-2]:
+        #st.markdown("<p style='font-family:sans-serif; font-size: 15px;'>Madanapalle Institute of Technology and Sciences </p>", unsafe_allow_html=True)
+        
+        st.write('Institute: AP Residential Educational Institutions Society')
+        st.write("Course: Mathematics,Physices and Chemistry")
+        st.write("Marks: 976")
+    with cols[-1]:
+        st.write('''Adress:                                
+                Cross Road, Near APSRTC Depot, Tirupathi Road,                            
+                State Highway 59, Venkatagiri,                                        
+                Andhra Pradesh 524132''')
+        #gif_html = get_img("source/location.png",". Tirupati, AP, India")
+        gif_html = get_img_with_href_message("source/location.png", social_meadia["source/location_aprjc"],"Location")
+        st.markdown(gif_html, unsafe_allow_html=True)
 
 
 
+    cols = st.columns([0.08,1,1.8,1.5],gap="large")
+    with cols[0]:
+        #st.write(":classical_building:")
+        st.markdown("#")
+        gif_html = get_img_with_href("source/zpph.png", social_meadia["source/zpph.png"])
+        st.markdown(gif_html, unsafe_allow_html=True)
+    with cols[1]:
+        st.markdown("<p style='font-family:sans-serif; font-size: 18px;'><b>SSC:10th (2014-2015)<b> </p>", unsafe_allow_html=True)
+    with cols[-2]:
+        #st.markdown("<p style='font-family:sans-serif; font-size: 15px;'>Madanapalle Institute of Technology and Sciences </p>", unsafe_allow_html=True)
+        
+        st.write('Institute: Zilla Parishad High School ')
+        #st.write("Course: Mathematics,Physices and Chemistry")
+        st.write("CGPA: 9.0")
+    with cols[-1]:
+        st.write('''Adress:                                
+                Kondagunta                                                             
+                Gudur (524101)                              
+                Tirupati (Andhra Pradesh)''')
+        #gif_html = get_img("source/location.png",". Tirupati, AP, India")
+        gif_html = get_img_with_href_message("source/location.png", social_meadia["source/location_zpph"],"Location")
+        st.markdown(gif_html, unsafe_allow_html=True)
+        
+       
+
+
+       
+with tab1s[2]:
+    st.markdown("<p style='font-family:sans-serif; font-size: 25px; color: pink' ><b>Legato<b>(<i>June 3rd,2021 - Till Date<i>) </p>", unsafe_allow_html=True)
+
+with tab1s[3]:
+    st.markdown("<p style='font-family:sans-serif; font-size: 25px;' ><b> yet to create<b> </p>", unsafe_allow_html=True)
+
+with tab1s[4]:
+    st.markdown("<p style='font-family:sans-serif; font-size: 20px;' > 1. Programming Language : <br style='color:#EAEFF5'/>Python <Br> 2. Machine Learning <Br> 3. Natural Laguage Processing </p>", unsafe_allow_html=True)
+
+
+with tab1s[5]:
+    st.markdown("<p style='font-family:sans-serif; font-size: 20px;' > <b> yet to create<b>  </p>", unsafe_allow_html=True)
+
+with tab1s[6]:
+    st.markdown("<p style='font-family:sans-serif; font-size: 20px;' > India </p>", unsafe_allow_html=True)
 
 
 
