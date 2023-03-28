@@ -270,7 +270,10 @@ with tab1s[6]:
     for idx, data in enumerate(list(social_meadia.items())[2:9]):
         gif_html = get_img_with_href(data[0], social_meadia[data[0]])
         cols[idx].markdown(gif_html, unsafe_allow_html=True)
-    
+    st.text(" ")
+    st.text(" ")
+    st.text(" ")
+    st.text(" ")
     st.markdown("<p > <center style='color:white; font-family:sans-serif; font-size: 20px;'> Let's Talk </center></p>", unsafe_allow_html=True)
     with st.form("form 3",clear_on_submit=True):
         c1,c2=st.columns(2)
