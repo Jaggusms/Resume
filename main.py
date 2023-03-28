@@ -46,6 +46,8 @@ def get_img(local_img_path,message):
             <p ><img align="left" src="data:image/{img_format};base64,{bin_str}" width="20"/>{message}</p>'''
     return html_code 
 
+
+
 tab1s = st.tabs(["Home", "Education", "Work Experience","Portfolio",'Skills','Projects','Contact']) 
 # st.markdown(img_to_html('source/ProfilePic.png'), unsafe_allow_html=True)
 # with open('html/img.html')as f:
@@ -54,13 +56,6 @@ tab1s = st.tabs(["Home", "Education", "Work Experience","Portfolio",'Skills','Pr
 with tab1s[0]:
     with open("css/style.css") as f:
         st.markdown('<style>{}</style>'.format(f.read()), unsafe_allow_html=True)
-
-
-
-    # def img_to_bytes(img_path):
-    #   return base64.b64encode(Path(img_path).read_bytes()).decode()
-    # def img_to_html(img_path):
-    #   return "<img src='data:image/png;base64,{}' class='img-fluid'>  ".format(img_to_bytes(img_path))
     social_meadia={
         "source/linkdin.png":"https://www.linkedin.com/in/jagadeesh-sanniboina-a8096816b/",
         "source/github_logo.png":"https://github.com/Jaggusms",
@@ -70,8 +65,8 @@ with tab1s[0]:
         "source/twitter.png":"https://twitter.com/SanniboinaJ?t=Mw1069Dj1N5G0-kLGmCMKw",
         "source/hacker_rank.png": "https://www.hackerrank.com/sanniboinajagad1",
         "source/hacker_earth.png":"https://www.hackerearth.com/@jagadeesh220",
-        "source/insta.png":"https://www.instagram.com/forgot_your_login_details/",
         "source/facebook.png": "https://www.facebook.com/jagadeesh.sanniboina.3/",
+        "source/insta.png":"https://www.instagram.com/forgot_your_login_details/",
         "source/MITS.jpg": "https://mits.ac.in/",
         "source/APRJC.png" : "https://aprs.apcfss.in/",
         "source/ZPPH.png"  : "https://spsnellore.ap.gov.in/public-utility/28193202104-zphs-kondagunta-gudur-mandal/",
@@ -80,11 +75,17 @@ with tab1s[0]:
         "source/location_btech" : "https://www.google.com/maps/place/Madanapalle+institute+of+technology+and+Science/@13.6296148,78.47635,17z/data=!3m1!4b1!4m6!3m5!1s0x3bb2677c83886ad7:0xad73159e2bddda33!8m2!3d13.6296148!4d78.4785387!16s%2Fm%2F010hplvm"
     }
 
+    # def img_to_bytes(img_path):
+    #   return base64.b64encode(Path(img_path).read_bytes()).decode()
+    # def img_to_html(img_path):
+    #   return "<img src='data:image/png;base64,{}' class='img-fluid'>  ".format(img_to_bytes(img_path))
+
+
     #col1, col2 = st.columns([3, 1],gap='small')
     col1,col2 ,col3= st.columns([2,1,0.5],gap="medium")
     with col2:
         #st.markdown(img_to_html('source/ProfilePic.png'), unsafe_allow_html=True)
-        st.image('source/ProfilePic.png', caption=None, width=200)
+        st.image('source/ProfilePic.png', caption=None, width=175)
     with col1:
         st.markdown("<p style='font-family:sans-serif; font-size: 20px;'>Hello, I'm</p>", unsafe_allow_html=True)
         st.markdown('<p style="font-family:sans-serif; font-size: 42px;"><i>JAGADEESH SANNIBOINA<i></p>', unsafe_allow_html=True)
@@ -103,7 +104,7 @@ with tab1s[0]:
         cols[0].markdown(gif_html, unsafe_allow_html=True)
         gif_html = get_img_with_href("source/insta.png", social_meadia["source/insta.png"])
         cols[1].markdown(gif_html, unsafe_allow_html=True)
-        gif_html = get_img_with_href("source/facebook.png", social_meadia["source/facebook.png"])
+        gif_html = get_img_with_href("source/github_logo.png", social_meadia["source/github_logo.png"])
         cols[2].markdown(gif_html, unsafe_allow_html=True)
         with open("source/Jagadeesh_ML_Resume.pdf", "rb") as pdf_file:
             PDFbyte = pdf_file.read()
@@ -222,7 +223,7 @@ with tab1s[1]:
 
        
 with tab1s[2]:
-    st.markdown("<p style='font-family:sans-serif; font-size: 25px; color: pink' ><b>Legato<b>(<i>June 3rd,2021 - Till Date<i>) </p>", unsafe_allow_html=True)
+    st.markdown("<p style='font-family:sans-serif; font-size: 25px; color: pink' ><b>Carelon<b>(<i>June 3rd,2021 - Till Date<i>) </p>", unsafe_allow_html=True)
 
 with tab1s[3]:
     st.markdown("<p style='font-family:sans-serif; font-size: 25px;' ><b> yet to create<b> </p>", unsafe_allow_html=True)
@@ -263,7 +264,29 @@ with tab1s[5]:
     st.markdown("<p style='font-family:sans-serif; font-size: 20px;' > <b> yet to create<b>  </p>", unsafe_allow_html=True)
 
 with tab1s[6]:
-    st.markdown("<p style='font-family:sans-serif; font-size: 20px;' > India </p>", unsafe_allow_html=True)
+    st.write("You can get some more works of mine by following sites: ")
+    st.text(" ")
+    cols = st.columns([0.3]*7+[2],gap="large")
+    for idx, data in enumerate(list(social_meadia.items())[2:9]):
+        gif_html = get_img_with_href(data[0], social_meadia[data[0]])
+        cols[idx].markdown(gif_html, unsafe_allow_html=True)
+    
+    st.markdown("<p > <center style='color:white; font-family:sans-serif; font-size: 20px;'> Let's Talk </center></p>", unsafe_allow_html=True)
+    with st.form("form 3",clear_on_submit=True):
+        c1,c2=st.columns(2)
+        fn=c1.text_input(label="Fisrt Name",placeholder="Please enter First Name")
+        sn=c2.text_input(label="Second Name",placeholder="Please enter Second Name")
+        em=c1.text_input(label="Mail",placeholder="Please enter valid Email")
+        phone=c2.text_input(label="Mobile",placeholder="Please enter Mobile Number")
+        message=st.text_area(label="Message",placeholder="Suggistion on this website or for me")
+        out=st.form_submit_button("Submit")
+        if out:
+            if fn=="" or sn=="":
+                st.warning("please fill First or Second Name")
+            elif "@" not in em:
+                st.warning("Please Enter Valid Email")
+            else:
+                st.success("Submit Successfully and I'll respond soon")
 
 
 
