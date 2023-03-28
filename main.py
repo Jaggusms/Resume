@@ -266,6 +266,8 @@ with tab1s[5]:
 with tab1s[6]:
     st.write("You can get some more works of mine by following sites: ")
     st.text(" ")
+    st.text(" ")
+    
     cols = st.columns([0.3]*7+[2],gap="large")
     for idx, data in enumerate(list(social_meadia.items())[2:9]):
         gif_html = get_img_with_href(data[0], social_meadia[data[0]])
