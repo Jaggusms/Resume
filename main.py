@@ -286,7 +286,7 @@ with tab1s[6]:
             elif "@" not in em:
                 st.warning("Please Enter Valid Email")
             else:
-                st.success("Submit Successfully and I'll respond soon")
+                st.success("Submit Successfully, I'll respond soon and Thank you")
 
 
 
