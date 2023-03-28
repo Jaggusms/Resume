@@ -230,14 +230,34 @@ with tab1s[3]:
 with tab1s[4]:
     #st.markdown("<p style='font-family:sans-serif; font-size: 20px;' > 1. Programming Language : <br style='color:#EAEFF5'/>Python <Br> 2. Machine Learning <Br> 3. Natural Laguage Processing </p>", unsafe_allow_html=True)
     #st.markdown("")
-    st.write("Programming languages: "+"&nbsp;"*5+"Python(professional)"+"&nbsp;"*5+"R(Basic)")
-    st.write("Libraries in Python as follows: ")        
+    st.markdown(":headphones: Programming languages: "+"&nbsp;"*5+"Python(professional)"+"&nbsp;"*5+"R(Basic)")
+    st.write("&nbsp;"*8+"Libraries in Python as follows: ")        
     skills=[("Pandas",5),("Numpy",5),("Pyspark",4),("Scikit-Learn",4),("Nltk",3),("Keras",3),("Open-CV",3),("Flask ",4),("Streamlit",4)]
 
     for library,rating in skills:
         #st.markdown("&nbsp;"*10+" :point_right: "+"&nbsp;"*5+library+"&nbsp;"*(25-len(library))+" :star:"*rating+"&nbsp;"*5+str(rating)+"/"+"5")
         st.markdown("&nbsp;"*20+" :point_right: "+"&nbsp;"*5+library+"&nbsp;"*(25-len(library))+" :star:"*rating)
-      
+    databases=[("SQL Server",5),("MongoDB",4)] 
+    st.markdown(":headphones: DataBase: ")
+    for library,rating in databases:
+        #st.markdown("&nbsp;"*10+" :point_right: "+"&nbsp;"*5+library+"&nbsp;"*(25-len(library))+" :star:"*rating+"&nbsp;"*5+str(rating)+"/"+"5")
+        st.markdown("&nbsp;"*20+" :pushpin: "+"&nbsp;"*5+library+"&nbsp;"*(25-len(library))+" :star:"*rating)
+    st.markdown(":headphones: Machine Learning:")
+    st.markdown("<p style='font-size: 15px;'> <i> "+"&nbsp;"*20+" Exploratory Data Analysis, Feature Engineering and Selection,Regression Classification Clustering and Ensemble Techniques, Hyper parameter tunning and Model Evalution etc..  </i>", unsafe_allow_html=True)
+
+    visuvalizer=[("PowerBI",4),("Tableau",3)] 
+    st.markdown(":headphones: Visuvalization: ")
+    for library,rating in visuvalizer:
+        #st.markdown("&nbsp;"*10+" :point_right: "+"&nbsp;"*5+library+"&nbsp;"*(25-len(library))+" :star:"*rating+"&nbsp;"*5+str(rating)+"/"+"5")
+        st.markdown("&nbsp;"*20+" :waxing_crescent_moon: "+"&nbsp;"*5+library+"&nbsp;"*(25-len(library))+" :star:"*rating)
+
+    Devops=[("Git",5),("Docker",3),("Jenkin",2)] 
+    st.markdown(":headphones: DevOps Tools:  Basic level")
+    for library,rating in Devops:
+        #st.markdown("&nbsp;"*10+" :point_right: "+"&nbsp;"*5+library+"&nbsp;"*(25-len(library))+" :star:"*rating+"&nbsp;"*5+str(rating)+"/"+"5")
+        st.markdown("&nbsp;"*20+" :truck: "+"&nbsp;"*5+library+"&ensp;"*(20-len(library))+" :star:"*rating)
+    
+    
 
 with tab1s[5]:
     st.markdown("<p style='font-family:sans-serif; font-size: 20px;' > <b> yet to create<b>  </p>", unsafe_allow_html=True)
