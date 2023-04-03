@@ -47,8 +47,9 @@ def get_img(local_img_path,message):
     return html_code 
 
 
-
-tab1s = st.tabs(["Home", "Education", "Work Experience","Portfolio",'Skills','Projects','Contact']) 
+listTabs=["Home", "Education", "Work Experience","Portfolio",'Skills','Projects','Contact']
+#tab1s = st.tabs(listTabs) 
+tab1s = st.tabs([s.center(10," ") for s in listTabs])
 # st.markdown(img_to_html('source/ProfilePic.png'), unsafe_allow_html=True)
 # with open('html/img.html')as f:
 #  st.markdown(f"<html>{f.read()}</html>", unsafe_allow_html = True)
@@ -223,7 +224,10 @@ with tab1s[1]:
 
        
 with tab1s[2]:
+    cols = st.columns([0.3]*7+[2],gap="large")
     st.markdown("<p style='font-family:sans-serif; font-size: 25px; color: pink' ><b>Carelon<b>(<i>June 3rd,2021 - Till Date<i>) </p>", unsafe_allow_html=True)
+
+
 
 with tab1s[3]:
     st.markdown("<p style='font-family:sans-serif; font-size: 25px;' ><b> yet to create<b> </p>", unsafe_allow_html=True)
