@@ -76,8 +76,8 @@ with tab1s[0]:
         "source/location_btech" : "https://www.google.com/maps/place/Madanapalle+institute+of+technology+and+Science/@13.6296148,78.47635,17z/data=!3m1!4b1!4m6!3m5!1s0x3bb2677c83886ad7:0xad73159e2bddda33!8m2!3d13.6296148!4d78.4785387!16s%2Fm%2F010hplvm",
         "source/carelon.jpg": "https://www.carelonglobal.in/",
         "linkdin_carelon": "https://www.linkedin.com/company/carelon-global-solutions/",
-        "glassdoor_carelon":"https://www.glassdoor.co.in/Overview/Working-at-Carelon-Global-Solutions-EI_IE8326220.11,35.htm"
-
+        "glassdoor_carelon":"https://www.glassdoor.co.in/Overview/Working-at-Carelon-Global-Solutions-EI_IE8326220.11,35.htm",
+        "resume_git":"https://github.com/Jaggusms/Resume"
     }
 
     # def img_to_bytes(img_path):
@@ -241,6 +241,21 @@ with tab1s[2]:
         st.markdown("##")
         st.markdown(":office: Carelon Global Solutions (3rd June-2021- Till Date)")
         st.markdown("#")
+        st.markdown("Project 1 ")
+        st.markdown("<b>Name:</b> Machine Learning Data Model building",unsafe_allow_html=True)
+        st.markdown("<b>Client:</b> Anthem",unsafe_allow_html=True)
+        st.markdown("<b>Description:</b>  ",unsafe_allow_html=True)
+        st.markdown("&ensp; &nbsp;:black_right_pointing_triangle_with_double_vertical_bar:  Understanding business objectives and developing models that help to achieve them, along with metrics to track their &ensp; &ensp; &ensp; &ensp; &ensp; &ensp;&ensp; &ensp;&ensp; progress.")
+        st.markdown("&ensp; &nbsp;:black_right_pointing_triangle_with_double_vertical_bar:  Participating in Data Preprocessing Techniques in order to make data useful for creating Machine Learning Models.")
+        st.markdown("&ensp; &nbsp;:black_right_pointing_triangle_with_double_vertical_bar:  Answer business questions by using appropriate statistical techniques on available data.")
+        st.markdown("&ensp; &nbsp;:black_right_pointing_triangle_with_double_vertical_bar:  Building various regression and classification algorithms by using various Sklearn libraries such as Linear Regression, Logistic  &ensp; &nbsp; &ensp; &nbsp; &ensp; &ensp;Regression, SVM, Decision Trees,Naive Bayes, Boosting methods such as Xgboost, Gradient Boosting.")
+        st.markdown("&ensp; &nbsp;:black_right_pointing_triangle_with_double_vertical_bar:  Expertise in working with noisy data, unbalanced datasets, Model tuning, Metrics, Feature Engineering and Data Augmentation  &ensp; &nbsp; &ensp; &nbsp; &nbsp;strategies.")
+        st.markdown("&ensp; &nbsp;:black_right_pointing_triangle_with_double_vertical_bar:  Analyzing the errors of the model and designing strategies to overcome them. ")
+        st.markdown("&ensp; &nbsp;:black_right_pointing_triangle_with_double_vertical_bar:  Strong verbal/written communication & data presentation skills, including an ability to effectively communicate with both  &ensp; &nbsp; &ensp; &nbsp; &ensp; &ensp;&nbsp; &ensp; business and technical teams.")
+        st.markdown("&ensp; &nbsp;:black_right_pointing_triangle_with_double_vertical_bar:  Be involved in technology research, capability building across newer technologies and tools in Machine Learning / Deep &ensp; &ensp; &ensp; &ensp; &ensp; &ensp;&ensp; &ensp; Learning.")
+
+        
+        st.markdown("#")
         st.markdown("Project 2 ")
         st.markdown("<b>Name:</b> Automation for Control-M by python",unsafe_allow_html=True)
         st.markdown("<b>Client:</b> Anthem",unsafe_allow_html=True)
@@ -293,7 +308,13 @@ with tab1s[4]:
     
 
 with tab1s[5]:
-    st.markdown("<p style='font-family:sans-serif; font-size: 20px;' > <b> yet to create<b>  </p>", unsafe_allow_html=True)
+    st.markdown("##")
+    st.markdown(":musical_keyboard: <b>Title:</b>"+"&ensp;"*10 +"Digital Resume",unsafe_allow_html=True)
+    st.markdown(":violin: <b>Description:</b>"+"&ensp;"*4 +"This digital resume was developed with streamlit library in python. Streamlit is an open-source app framework for Machine Learning and Data Science teams. "+"&ensp;"*17 +" Create beautiful web apps in minutes.",unsafe_allow_html=True)
+    
+    st.markdown(":violin: <b>Libraries Used:</b>&ensp; streanlit, PIL ",unsafe_allow_html=True)
+    gif_html = get_img_with_href_message("source/github_logo.png", social_meadia["resume_git"],"Click me")
+    st.markdown(gif_html, unsafe_allow_html=True)
 
 with tab1s[6]:
     st.write("You can get some more works of mine by following sites: ")
