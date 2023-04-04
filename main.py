@@ -77,7 +77,9 @@ with tab1s[0]:
         "source/carelon.jpg": "https://www.carelonglobal.in/",
         "linkdin_carelon": "https://www.linkedin.com/company/carelon-global-solutions/",
         "glassdoor_carelon":"https://www.glassdoor.co.in/Overview/Working-at-Carelon-Global-Solutions-EI_IE8326220.11,35.htm",
-        "resume_git":"https://github.com/Jaggusms/Resume"
+        "resume_git":"https://github.com/Jaggusms/Resume",
+        "moneylanduring_git":"https://github.com/Jaggusms/MonayLaundering",
+        "Price_Predictor" : "https://github.com/Jaggusms/laptop_price_pridiction"
     }
 
     # def img_to_bytes(img_path):
@@ -311,11 +313,24 @@ with tab1s[5]:
     st.markdown("##")
     st.markdown(":musical_keyboard: <b>Title:</b>"+"&ensp;"*10 +"Digital Resume",unsafe_allow_html=True)
     st.markdown(":violin: <b>Description:</b>"+"&ensp;"*4 +"This digital resume was developed with streamlit library in python. Streamlit is an open-source app framework for Machine Learning and Data Science teams. "+"&ensp;"*17 +" Create beautiful web apps in minutes.",unsafe_allow_html=True)
-    
     st.markdown(":violin: <b>Libraries Used:</b>&ensp; streanlit, PIL ",unsafe_allow_html=True)
     gif_html = get_img_with_href_message("source/github_logo.png", social_meadia["resume_git"],"Click me")
     st.markdown(gif_html, unsafe_allow_html=True)
 
+    st.markdown("#")
+    st.markdown(":musical_keyboard: <b>Title:</b>"+"&ensp;"*10 +"Money Laundering System ",unsafe_allow_html=True)
+    st.markdown(":violin: <b>Description:</b>"+"&ensp;"*4 +"Money Laundering System is a classification problem. Aspect of financial transaction, the challenge is to predict whether the transaction is fraud or not. ",unsafe_allow_html=True)
+    st.markdown(":violin: <b>Skills: </b>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; data preprocessing, Feature Engineering, Model Building, Model Deployment.. ",unsafe_allow_html=True)
+    gif_html = get_img_with_href_message("source/github_logo.png", social_meadia["moneylanduring_git"],"Click me")
+    st.markdown(gif_html, unsafe_allow_html=True)
+
+    st.markdown("#")
+    st.markdown(":musical_keyboard: <b>Title:</b>"+"&ensp;"*10 +"Laptop Price Predictor ",unsafe_allow_html=True)
+    st.markdown(":violin: <b>Description:</b>"+"&ensp;"*4 +"Laptop Price Prediction is a regression problem. Given the training instances extracted from various websites we are expected to predict the price of any laptop.",unsafe_allow_html=True)
+    st.markdown(":violin: <b>Skills: </b>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;  Ensemble models, EDA, Feature Engineering ",unsafe_allow_html=True)
+    gif_html = get_img_with_href_message("source/github_logo.png", social_meadia["Price_Predictor"],"Click me")
+    st.markdown(gif_html, unsafe_allow_html=True)
+    
 with tab1s[6]:
     st.write("You can get some more works of mine by following sites: ")
     st.text(" ")
