@@ -22,12 +22,12 @@ def get_base64_of_bin_file(bin_file):
         data = f.read()
     return base64.b64encode(data).decode()
 @st.cache_resource()
-def get_img_with_href(local_img_path, target_url):
+def get_img_with_href(local_img_path, target_url,width):
     img_format = os.path.splitext(local_img_path)[-1].replace('.', '')
     bin_str = get_base64_of_bin_file(local_img_path)
     html_code = f'''
         <a href="{target_url}">
-            <img align="left" src="data:image/{img_format};base64,{bin_str}" width="25"/>
+            <img align="left" src="data:image/{img_format};base64,{bin_str}" width="{width}"/>
         </a>'''
     return html_code
 #@st.cache_resource() 
@@ -73,7 +73,11 @@ with tab1s[0]:
         "source/ZPPH.png"  : "https://spsnellore.ap.gov.in/public-utility/28193202104-zphs-kondagunta-gudur-mandal/",
         "source/location_zpph": "https://www.google.com/maps/place/Zilla+Parishad+High+School/@14.0816058,79.7909562,17z/data=!4m10!1m2!2m1!1sZPHS+Kondagunta,+Andhra+Pradesh!3m6!1s0x3a4ce1ce312463bd:0xa82ae7d18ce022e1!8m2!3d14.0815407!4d79.7927177!15sCh9aUEhTIEtvbmRhZ3VudGEsIEFuZGhyYSBQcmFkZXNokgERZ292ZXJubWVudF9zY2hvb2zgAQA!16s%2Fg%2F11g8y97071",
         "source/location_aprjc":"https://www.google.com/maps/place/A+P+Residential+Junior+College+For+Boys/@13.943345,79.592139,17z/data=!3m1!4b1!4m6!3m5!1s0x3a4d25b79cabd9ad:0x2bebd90682c4fa76!8m2!3d13.943345!4d79.5943277!16s%2Fg%2F1q69wq87s",
-        "source/location_btech" : "https://www.google.com/maps/place/Madanapalle+institute+of+technology+and+Science/@13.6296148,78.47635,17z/data=!3m1!4b1!4m6!3m5!1s0x3bb2677c83886ad7:0xad73159e2bddda33!8m2!3d13.6296148!4d78.4785387!16s%2Fm%2F010hplvm"
+        "source/location_btech" : "https://www.google.com/maps/place/Madanapalle+institute+of+technology+and+Science/@13.6296148,78.47635,17z/data=!3m1!4b1!4m6!3m5!1s0x3bb2677c83886ad7:0xad73159e2bddda33!8m2!3d13.6296148!4d78.4785387!16s%2Fm%2F010hplvm",
+        "source/carelon.jpg": "https://www.carelonglobal.in/",
+        "linkdin_carelon": "https://www.linkedin.com/company/carelon-global-solutions/",
+        "glassdoor_carelon":"https://www.glassdoor.co.in/Overview/Working-at-Carelon-Global-Solutions-EI_IE8326220.11,35.htm"
+
     }
 
     # def img_to_bytes(img_path):
@@ -101,11 +105,11 @@ with tab1s[0]:
         st.markdown(gif_html, unsafe_allow_html=True)
     cols = st.columns([0.5 if i in [0,1,2]  else 3 if i==7 else 1 for i in range(10) ],gap="large")
     with cols[0]:
-        gif_html = get_img_with_href("source/linkdin.png", social_meadia["source/linkdin.png"])
+        gif_html = get_img_with_href("source/linkdin.png", social_meadia["source/linkdin.png"],25)
         cols[0].markdown(gif_html, unsafe_allow_html=True)
-        gif_html = get_img_with_href("source/insta.png", social_meadia["source/insta.png"])
+        gif_html = get_img_with_href("source/insta.png", social_meadia["source/insta.png"],25)
         cols[1].markdown(gif_html, unsafe_allow_html=True)
-        gif_html = get_img_with_href("source/github_logo.png", social_meadia["source/github_logo.png"])
+        gif_html = get_img_with_href("source/github_logo.png", social_meadia["source/github_logo.png"],25)
         cols[2].markdown(gif_html, unsafe_allow_html=True)
         with open("source/Jagadeesh_ML_Resume.pdf", "rb") as pdf_file:
             PDFbyte = pdf_file.read()
@@ -150,7 +154,7 @@ with tab1s[1]:
     with cols[0]:
         #st.write(":classical_building:")
         st.markdown("#")
-        gif_html = get_img_with_href("source/MITS.jpg", social_meadia["source/MITS.jpg"])
+        gif_html = get_img_with_href("source/MITS.jpg", social_meadia["source/MITS.jpg"],25)
         st.markdown(gif_html, unsafe_allow_html=True)
     with cols[1]:
         st.markdown("<p style='font-family:sans-serif; font-size: 18px;'><b> B-Tech(2017-2021)<b> </p>", unsafe_allow_html=True)
@@ -175,7 +179,7 @@ with tab1s[1]:
     with cols[0]:
         #st.write(":classical_building:")
         st.markdown("#")
-        gif_html = get_img_with_href("source/APRJC.png", social_meadia["source/APRJC.png"])
+        gif_html = get_img_with_href("source/APRJC.png", social_meadia["source/APRJC.png"],25)
         st.markdown(gif_html, unsafe_allow_html=True)
     with cols[1]:
         st.markdown("<p style='font-family:sans-serif; font-size: 18px;'><b> Intermediate (2015-2017)<b> </p>", unsafe_allow_html=True)
@@ -200,7 +204,7 @@ with tab1s[1]:
     with cols[0]:
         #st.write(":classical_building:")
         st.markdown("#")
-        gif_html = get_img_with_href("source/ZPPH.png", social_meadia["source/ZPPH.png"])
+        gif_html = get_img_with_href("source/ZPPH.png", social_meadia["source/ZPPH.png"],25)
         st.markdown(gif_html, unsafe_allow_html=True)
     with cols[1]:
         st.markdown("<p style='font-family:sans-serif; font-size: 18px;'><b>SSC:10th (2014-2015)<b> </p>", unsafe_allow_html=True)
@@ -224,9 +228,33 @@ with tab1s[1]:
 
        
 with tab1s[2]:
-    cols = st.columns([0.3]*7+[2],gap="large")
-    st.markdown("<p style='font-family:sans-serif; font-size: 25px; color: pink' ><b>Carelon<b>(<i>June 3rd,2021 - Till Date<i>) </p>", unsafe_allow_html=True)
-
+    cols = st.columns([4,1.5],gap="small")
+    with cols[1]:
+        st.markdown("##")
+        gif_html = get_img_with_href("source/carelon.jpg", social_meadia["source/carelon.jpg"],100)
+        st.markdown(gif_html, unsafe_allow_html=True)
+        st.markdown("Follow on ")
+        carelon_linkdin = get_img_with_href("source/linkdin.png", social_meadia["linkdin_carelon"],20)
+        carelon_glassdoor=get_img_with_href("source/glassdoor.png", social_meadia["glassdoor_carelon"],20)
+        st.markdown(f"<p> {carelon_linkdin} &nbsp; &nbsp;  {carelon_glassdoor }</p>", unsafe_allow_html=True)
+    with cols[0]:
+        st.markdown("##")
+        st.markdown(":office: Carelon Global Solutions (3rd June-2021- Till Date)")
+        st.markdown("#")
+        st.markdown("Project 2 ")
+        st.markdown("<b>Name:</b> Automation for Control-M by python",unsafe_allow_html=True)
+        st.markdown("<b>Client:</b> Anthem",unsafe_allow_html=True)
+        st.markdown("<b>Description:</b>  ",unsafe_allow_html=True)
+        st.markdown("&ensp; &nbsp;:black_right_pointing_triangle_with_double_vertical_bar: we have create automation python code to migrate one environment to another of CTM folder &nbsp;i.e DEV to SIT vice versa etc..")
+        st.markdown("&ensp; &nbsp;:black_right_pointing_triangle_with_double_vertical_bar: Generate, modify and pulls require details of the XML file  of Contol M tool by python and the process like web scraping")
+        st.markdown("&ensp; &nbsp;:black_right_pointing_triangle_with_double_vertical_bar: we need to fill color of Control M folders details in excell by comparing the old and new files of xml format and need to get text &ensp; &nbsp; &ensp; &nbsp; &ensp; &ensp;&nbsp; &nbsp;reports by comparing Elastic Scheduling Platform (ESP) text reports, ControlM xml Reports ")
+        st.markdown("&ensp; &nbsp;:black_right_pointing_triangle_with_double_vertical_bar: we have been decrease 50 percent of human efferts in Control M ")
+        st.markdown("#")
+        st.markdown("<b>Libraries Used:</b>  Pandas, xml.etree, openpyxl ",unsafe_allow_html=True)
+        
+        
+    
+        
 
 
 with tab1s[3]:
@@ -274,7 +302,7 @@ with tab1s[6]:
     
     cols = st.columns([0.3]*7+[2],gap="large")
     for idx, data in enumerate(list(social_meadia.items())[2:9]):
-        gif_html = get_img_with_href(data[0], social_meadia[data[0]])
+        gif_html = get_img_with_href(data[0], social_meadia[data[0]],25)
         cols[idx].markdown(gif_html, unsafe_allow_html=True)
     st.text(" ")
     st.text(" ")
