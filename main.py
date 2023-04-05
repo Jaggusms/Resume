@@ -25,10 +25,7 @@ def get_base64_of_bin_file(bin_file):
 def get_img_with_href(local_img_path, target_url,width):
     img_format = os.path.splitext(local_img_path)[-1].replace('.', '')
     bin_str = get_base64_of_bin_file(local_img_path)
-    html_code = f'''
-        <a href="{target_url}">
-            <img align="left" src="data:image/{img_format};base64,{bin_str}" width="{width}"/>
-        </a>'''
+    html_code = f'''<a href="{target_url}"><img align="left" src="data:image/{img_format};base64,{bin_str}" width="{width}"/></a>'''
     return html_code
 #@st.cache_resource() 
 def get_img_with_href_message(local_img_path, target_url,message):
@@ -106,7 +103,13 @@ with tab1s[0]:
         gif_html = get_img("source/location.png",". Tirupati, AP, India")
         st.markdown(gif_html, unsafe_allow_html=True)
     cols = st.columns([0.5 if i in [0,1,2]  else 3 if i==7 else 1 for i in range(10) ],gap="large")
+    linkdin = get_img_with_href("source/linkdin.png", social_meadia["source/linkdin.png"],20)
+    insta = get_img_with_href("source/insta.png", social_meadia["source/insta.png"],20)
+    gihub = get_img_with_href("source/github_logo.png", social_meadia["source/github_logo.png"],25)
+    st.markdown(f"<p>{linkdin} &ensp;  {insta}  &ensp;  {gihub}</p>", unsafe_allow_html=True)
     with cols[0]:
+        
+        
         gif_html = get_img_with_href("source/linkdin.png", social_meadia["source/linkdin.png"],25)
         cols[0].markdown(gif_html, unsafe_allow_html=True)
         gif_html = get_img_with_href("source/insta.png", social_meadia["source/insta.png"],25)
