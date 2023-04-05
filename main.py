@@ -158,10 +158,10 @@ with tab1s[0]:
     #  st.markdown(f"<html>{f.read()}</html>", unsafe_allow_html = True)
 with tab1s[1]:
 
-    cols = st.columns([0.08,1,1.8,1.5],gap="large")
+    cols = st.columns([0.08,1,1.8,1.5],gap="small")
     with cols[0]:
         #st.write(":classical_building:")
-        st.markdown("#")
+        #st.markdown("#")
         gif_html = get_img_with_href("source/MITS.jpg", social_meadia["source/MITS.jpg"],25)
         st.markdown(gif_html, unsafe_allow_html=True)
     with cols[1]:
@@ -183,10 +183,10 @@ with tab1s[1]:
         st.markdown(gif_html, unsafe_allow_html=True)
 
     
-    cols = st.columns([0.08,1,1.8,1.5],gap="large")
+    cols = st.columns([0.08,1,1.8,1.5],gap="small")
     with cols[0]:
         #st.write(":classical_building:")
-        st.markdown("#")
+        #st.markdown("#")
         gif_html = get_img_with_href("source/APRJC.png", social_meadia["source/APRJC.png"],25)
         st.markdown(gif_html, unsafe_allow_html=True)
     with cols[1]:
@@ -208,10 +208,10 @@ with tab1s[1]:
 
 
 
-    cols = st.columns([0.08,1,1.8,1.5],gap="large")
+    cols = st.columns([0.08,1,1.8,1.5],gap="small")
     with cols[0]:
         #st.write(":classical_building:")
-        st.markdown("#")
+        #st.markdown("#")
         gif_html = get_img_with_href("source/ZPPH.png", social_meadia["source/ZPPH.png"],25)
         st.markdown(gif_html, unsafe_allow_html=True)
     with cols[1]:
