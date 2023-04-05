@@ -86,7 +86,7 @@ with tab1s[0]:
 
 
     #col1, col2 = st.columns([3, 1],gap='small')
-    col1,col2 ,col3= st.columns([2,2,0.5],gap="small")
+    col1,col2= st.columns([3,2],gap="small")
     with col2:
         #st.markdown(img_to_html('source/ProfilePic.png'), unsafe_allow_html=True)
         st.image('source/ProfilePic.png', caption=None, width=175)
