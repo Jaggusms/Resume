@@ -106,19 +106,19 @@ with tab1s[0]:
     linkdin = get_img_with_href("source/linkdin.png", social_meadia["source/linkdin.png"],20)
     insta = get_img_with_href("source/insta.png", social_meadia["source/insta.png"],20)
     gihub = get_img_with_href("source/github_logo.png", social_meadia["source/github_logo.png"],25)
-    st.markdown(f"<p>{linkdin} &ensp;  {insta}  &ensp;  {gihub}</p>", unsafe_allow_html=True)
-    with cols[0]:
+    st.markdown(f"<p>&ensp; {linkdin} &ensp;  {insta}  &ensp;  {gihub}</p>", unsafe_allow_html=True)
+    # with cols[0]:
         
         
-        gif_html = get_img_with_href("source/linkdin.png", social_meadia["source/linkdin.png"],25)
-        cols[0].markdown(gif_html, unsafe_allow_html=True)
-        gif_html = get_img_with_href("source/insta.png", social_meadia["source/insta.png"],25)
-        cols[1].markdown(gif_html, unsafe_allow_html=True)
-        gif_html = get_img_with_href("source/github_logo.png", social_meadia["source/github_logo.png"],25)
-        cols[2].markdown(gif_html, unsafe_allow_html=True)
-        with open("source/Jagadeesh_ML_Resume.pdf", "rb") as pdf_file:
-            PDFbyte = pdf_file.read()
-            cols[7].download_button(label=" 📄 Download CV",data=PDFbyte,file_name="souce/Jagadeesh_ML_Resume.pdf",mime="application/octet-stream")
+    #     gif_html = get_img_with_href("source/linkdin.png", social_meadia["source/linkdin.png"],25)
+    #     cols[0].markdown(gif_html, unsafe_allow_html=True)
+    #     gif_html = get_img_with_href("source/insta.png", social_meadia["source/insta.png"],25)
+    #     cols[1].markdown(gif_html, unsafe_allow_html=True)
+    #     gif_html = get_img_with_href("source/github_logo.png", social_meadia["source/github_logo.png"],25)
+    #     cols[2].markdown(gif_html, unsafe_allow_html=True)
+    with open("source/Jagadeesh_ML_Resume.pdf", "rb") as pdf_file:
+        PDFbyte = pdf_file.read()
+        st.download_button(label=" 📄 Download CV",data=PDFbyte,file_name="souce/Jagadeesh_ML_Resume.pdf",mime="application/octet-stream")
                 
                 
         
