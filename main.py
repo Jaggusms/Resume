@@ -87,13 +87,6 @@ with tab1s[0]:
 
     #col1, col2 = st.columns([3, 1],gap='small')
     col1,col2= st.columns([3,2],gap="small")
-    with col2:
-        #st.markdown(img_to_html('source/ProfilePic.png'), unsafe_allow_html=True)
-        st.image('source/ProfilePic.png', caption=None, width=160)
-        with open("source/Jagadeesh_ML_Resume.pdf", "rb") as pdf_file:
-            PDFbyte = pdf_file.read()
-            st.download_button(label="📄 Download CV",data=PDFbyte,file_name="souce/Jagadeesh_ML_Resume.pdf",mime="application/octet-stream")
-       
     with col1:
         st.markdown("<p style='font-family:sans-serif; font-size: 20px;'>Hello, I'm</p>", unsafe_allow_html=True)
         st.markdown('<p style="font-family:sans-serif; font-size: 42px;"><i>JAGADEESH SANNIBOINA<i></p>', unsafe_allow_html=True)
@@ -106,6 +99,14 @@ with tab1s[0]:
         st.markdown(gif_html, unsafe_allow_html=True)
         gif_html = get_img("source/location.png",". Tirupati, AP, India")
         st.markdown(gif_html, unsafe_allow_html=True)
+    with col2:
+        #st.markdown(img_to_html('source/ProfilePic.png'), unsafe_allow_html=True)
+        st.image('source/ProfilePic.png', caption=None, width=160)
+        with open("source/Jagadeesh_ML_Resume.pdf", "rb") as pdf_file:
+            PDFbyte = pdf_file.read()
+            st.download_button(label="📄 Download CV",data=PDFbyte,file_name="souce/Jagadeesh_ML_Resume.pdf",mime="application/octet-stream")
+       
+    
     cols = st.columns([0.5 if i in [0,1,2]  else 3 if i==7 else 1 for i in range(10) ],gap="large")
     linkdin = get_img_with_href("source/linkdin.png", social_meadia["source/linkdin.png"],20)
     insta = get_img_with_href("source/insta.png", social_meadia["source/insta.png"],20)
