@@ -89,7 +89,11 @@ with tab1s[0]:
     col1,col2= st.columns([3,2],gap="small")
     with col2:
         #st.markdown(img_to_html('source/ProfilePic.png'), unsafe_allow_html=True)
-        st.image('source/ProfilePic.png', caption=None, width=175)
+        st.image('source/ProfilePic.png', caption=None, width=160)
+        with open("source/Jagadeesh_ML_Resume.pdf", "rb") as pdf_file:
+            PDFbyte = pdf_file.read()
+            st.download_button(label="📄 Download CV",data=PDFbyte,file_name="souce/Jagadeesh_ML_Resume.pdf",mime="application/octet-stream")
+       
     with col1:
         st.markdown("<p style='font-family:sans-serif; font-size: 20px;'>Hello, I'm</p>", unsafe_allow_html=True)
         st.markdown('<p style="font-family:sans-serif; font-size: 42px;"><i>JAGADEESH SANNIBOINA<i></p>', unsafe_allow_html=True)
@@ -116,10 +120,7 @@ with tab1s[0]:
     #     cols[1].markdown(gif_html, unsafe_allow_html=True)
     #     gif_html = get_img_with_href("source/github_logo.png", social_meadia["source/github_logo.png"],25)
     #     cols[2].markdown(gif_html, unsafe_allow_html=True)
-    with open("source/Jagadeesh_ML_Resume.pdf", "rb") as pdf_file:
-        PDFbyte = pdf_file.read()
-        st.download_button(label=" 📄 Download CV",data=PDFbyte,file_name="souce/Jagadeesh_ML_Resume.pdf",mime="application/octet-stream")
-                
+             
                 
         
     cols=st.columns([0.25,1,2],gap="small")
