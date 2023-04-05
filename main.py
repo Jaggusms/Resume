@@ -107,7 +107,7 @@ with tab1s[0]:
             st.download_button(label="📄 Download CV",data=PDFbyte,file_name="souce/Jagadeesh_ML_Resume.pdf",mime="application/octet-stream")
        
     
-    cols = st.columns([0.5 if i in [0,1,2]  else 3 if i==7 else 1 for i in range(10) ],gap="large")
+    #cols = st.columns([0.5 if i in [0,1,2]  else 3 if i==7 else 1 for i in range(10) ],gap="large")
     linkdin = get_img_with_href("source/linkdin.png", social_meadia["source/linkdin.png"],20)
     insta = get_img_with_href("source/insta.png", social_meadia["source/insta.png"],20)
     gihub = get_img_with_href("source/github_logo.png", social_meadia["source/github_logo.png"],25)
