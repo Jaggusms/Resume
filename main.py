@@ -44,7 +44,7 @@ def get_img(local_img_path,message):
     return html_code 
 
 
-listTabs=["Home", "Education", "Work Experience","Portfolio",'Skills','Projects','Contact']
+listTabs=["Home", "Education", "Work Experience",'Skills','Projects','Contact',"Portfolio"]
 #tab1s = st.tabs(listTabs) 
 tab1s = st.tabs([s.center(10," ") for s in listTabs])
 # st.markdown(img_to_html('source/ProfilePic.png'), unsafe_allow_html=True)
@@ -276,10 +276,10 @@ with tab1s[2]:
         
 
 
-with tab1s[3]:
-    st.markdown("<p style='font-family:sans-serif; font-size: 25px;' ><b> yet to create<b> </p>", unsafe_allow_html=True)
+with tab1s[-1]:
+    st.markdown("<p style='font-family:sans-serif; font-size: 25px;' ><b> Yet to create<b> </p>", unsafe_allow_html=True)
 
-with tab1s[4]:
+with tab1s[3]:
     #st.markdown("<p style='font-family:sans-serif; font-size: 20px;' > 1. Programming Language : <br style='color:#EAEFF5'/>Python <Br> 2. Machine Learning <Br> 3. Natural Laguage Processing </p>", unsafe_allow_html=True)
     #st.markdown("")
     st.markdown(":headphones: Programming languages: "+"&nbsp;"*5+"Python(professional)"+"&nbsp;"*5+"R(Basic)")
@@ -311,7 +311,7 @@ with tab1s[4]:
     
     
 
-with tab1s[5]:
+with tab1s[4]:
     st.markdown("##")
     st.markdown(":musical_keyboard: <b>Title:</b>"+"&ensp;"*10 +"Digital Resume",unsafe_allow_html=True)
     st.markdown(":violin: <b>Description:</b>"+"&ensp;"*4 +"This digital resume was developed with streamlit library in python. Streamlit is an open-source app framework for Machine Learning and Data Science teams. Create beautiful web apps in minutes.",unsafe_allow_html=True)
@@ -333,7 +333,7 @@ with tab1s[5]:
     gif_html = get_img_with_href_message("source/github_logo.png", social_meadia["Price_Predictor"],"Click me")
     st.markdown(gif_html, unsafe_allow_html=True)
     
-with tab1s[6]:
+with tab1s[5]:
     st.write("You can get some more works of mine by following sites: ")
     st.text(" ")
     st.text(" ")
