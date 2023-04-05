@@ -305,11 +305,12 @@ with tab1s[4]:
     st.markdown(":headphones: DevOps Tools:  Basic level")
     for library,rating in Devops:
         #st.markdown("&nbsp;"*10+" :point_right: "+"&nbsp;"*5+library+"&nbsp;"*(25-len(library))+" :star:"*rating+"&nbsp;"*5+str(rating)+"/"+"5")
-        st.markdown("&nbsp;"*20+" :truck: "+"&nbsp;"*5+library+"&ensp;"*(20-len(library))+" :star:"*rating)
+        st.markdown("&nbsp;"*20+" :truck: "+"&nbsp;"*5+library+"&ensp;"*(15-len(library))+" :star:"*rating)
     
     
 
 with tab1s[5]:
+    cols = st.columns([4,1.5],gap="small")
     st.markdown("##")
     st.markdown(":musical_keyboard: <b>Title:</b>"+"&ensp;"*10 +"Digital Resume",unsafe_allow_html=True)
     st.markdown(":violin: <b>Description:</b>"+"&ensp;"*4 +"This digital resume was developed with streamlit library in python. Streamlit is an open-source app framework for Machine Learning and Data Science teams. Create beautiful web apps in minutes.",unsafe_allow_html=True)
