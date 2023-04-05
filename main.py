@@ -338,7 +338,7 @@ with tab1s[5]:
     st.text(" ")
     st.text(" ")
     
-    cols = st.columns([0.3]*7+[2],gap="large")
+    cols = st.columns([0.3]*7+[2],gap="small")
     for idx, data in enumerate(list(social_meadia.items())[2:9]):
         gif_html = get_img_with_href(data[0], social_meadia[data[0]],25)
         cols[idx].markdown(gif_html, unsafe_allow_html=True)
