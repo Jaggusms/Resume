@@ -102,7 +102,8 @@ with tab1s[0]:
         linkdin = get_img_with_href("source/linkdin.png", social_meadia["source/linkdin.png"],25)
         insta = get_img_with_href("source/insta.png", social_meadia["source/insta.png"],25)
         gihub = get_img_with_href("source/github_logo.png", social_meadia["source/github_logo.png"],25)
-        st.markdown(f"<p> {linkdin} {insta} {gihub} </p>", unsafe_allow_html=True)
+        kagle=get_img_with_href("source/kaggle.png", social_meadia["source/kaggle.png"],25)
+        st.markdown(f"<p> {linkdin} {insta} {gihub} {kagle}</p>", unsafe_allow_html=True)
     with col2:
         #st.markdown(img_to_html('source/ProfilePic.png'), unsafe_allow_html=True)
         st.image('source/ProfilePic.png', caption=None, width=155)
