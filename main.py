@@ -55,9 +55,9 @@ with tab1s[0]:
     with open("css/style.css") as f:
         st.markdown('<style>{}</style>'.format(f.read()), unsafe_allow_html=True)
     social_meadia={
-        "source/linkdin.png":"https://www.linkedin.com/in/jagadeesh-sanniboina-a8096816b/",
+        "source/linkdin.png":"https://www.linkedin.com/in/jagadeesh-sanniboina-b9076b270/",
         "source/github_logo.png":"https://github.com/Jaggusms",
-        "source/kaggle.png":"https://www.kaggle.com/jagadeeshsanniboina",
+        "source/kaggle.png":"https://www.kaggle.com/jagadeeshmemories",
         "source/medium.png": "https://medium.com/@jagadeeshmk",
         "source/stackoverflow.png":"https://stackoverflow.com/users/9774886/jagadeesh-sanniboina?tab=profile",
         "source/twitter.png":"https://twitter.com/SanniboinaJ?t=Mw1069Dj1N5G0-kLGmCMKw",
