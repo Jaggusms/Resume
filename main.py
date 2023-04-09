@@ -339,7 +339,7 @@ with tab1s[5]:
     st.write("You can get some more works of mine by following sites: ")
     st.text(" ")
     string=""
-    for idx, data in enumerate(list(social_meadia.items())[2:9]):
+    for idx, data in enumerate(list(social_meadia.items())[3:9]):
         gif_html = get_img_with_href(data[0], social_meadia[data[0]],25)
         string +=gif_html
         
