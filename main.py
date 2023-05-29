@@ -32,9 +32,9 @@ def get_img_with_href_message(local_img_path, target_url,message):
     img_format = os.path.splitext(local_img_path)[-1].replace('.', '')
     bin_str = get_base64_of_bin_file(local_img_path)
     html_code = f'''
-        <p><a href="{target_url}">
+        <a href="{target_url}">
             <img align="left" src="data:image/{img_format};base64,{bin_str}" width="25"/>
-        </a>{message}</p>'''
+        </a><span style="color:white;float: left;">{message}</span>'''
     return html_code
 def get_img(local_img_path,message):
     img_format = os.path.splitext(local_img_path)[-1].replace('.', '')
@@ -76,7 +76,10 @@ with tab1s[0]:
         "glassdoor_carelon":"https://www.glassdoor.co.in/Overview/Working-at-Carelon-Global-Solutions-EI_IE8326220.11,35.htm",
         "resume_git":"https://github.com/Jaggusms/Resume",
         "moneylanduring_git":"https://github.com/Jaggusms/MonayLaundering",
-        "Price_Predictor" : "https://github.com/Jaggusms/laptop_price_pridiction"
+        "Price_Predictor" : "https://github.com/Jaggusms/laptop_price_pridiction",
+        "login_page_using_sql":"https://github.com/Jaggusms/login_page_using_sqlserver_flask",
+        "login_page_using_mongodb": "https://github.com/Jaggusms/login_mongodb",
+        "Messenger":"https://jaggusms-messenger-main-u03a89.streamlit.app/"
     }
 
     # def img_to_bytes(img_path):
@@ -107,7 +110,7 @@ with tab1s[0]:
         
     with col2:
         #st.markdown(img_to_html('source/ProfilePic.png'), unsafe_allow_html=True)
-        st.image('source/ProfilePic.png', caption=None, width=175)
+        st.image('source/ProfilePic.png', caption=None, width=155)
         with open("source/Jagadeesh_ML_Resume.pdf", "rb") as pdf_file:
             PDFbyte = pdf_file.read()
             st.download_button(label="📄 Download CV",data=PDFbyte,file_name="souce/Jagadeesh_ML_Resume.pdf",mime="application/octet-stream")
@@ -335,6 +338,28 @@ with tab1s[4]:
     gif_html = get_img_with_href_message("source/github_logo.png", social_meadia["Price_Predictor"],"Click me")
     st.markdown(gif_html, unsafe_allow_html=True)
     
+
+    st.markdown("#")
+    st.markdown(":musical_keyboard: <b>Title:</b>"+"&ensp;"*10 +"Login Page using Flask ",unsafe_allow_html=True)
+    st.markdown(":violin: <b>Description:</b>"+"&ensp;"*4 +"i have created the sample Login page using Rest api Framework (Flask) and bakend as SQL and Mondodb as well.",unsafe_allow_html=True)
+    st.markdown(":violin: <b>Skills: </b>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;  Curd operations on SQL, MongoDB and Rest API requiests like POST,GET,PUT managements.   ",unsafe_allow_html=True)
+    SQL = get_img_with_href_message("source/github_logo.png", social_meadia["login_page_using_sql"],"SQL")
+    mongodb = get_img_with_href_message("source/github_logo.png", social_meadia["login_page_using_mongodb"],"MongoDB")
+    # col = st.columns([0.8,1.5,10],gap="small")
+    # col[0].markdown(SQL, unsafe_allow_html=True)
+    # col[1].markdown(mongodb, unsafe_allow_html=True)
+    #print()
+    st.markdown(f"<p>{SQL}{mongodb}</p>" , unsafe_allow_html=True)
+
+
+    st.markdown("#")
+    st.markdown(":musical_keyboard: <b>Title:</b>"+"&ensp;"*10 +"Mini Mesenger ",unsafe_allow_html=True)
+    st.markdown(":violin: <b>Description:</b>"+"&ensp;"*4 +"It acts like messenger we can tranfer any text and links over the site, i used streamlit as frontend and MongoDB as Backend",unsafe_allow_html=True)
+    st.markdown(":violin: <b>Skills: </b>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; Curd Operations on Mondodb and streamlit web fromwork",unsafe_allow_html=True)
+    gif_html = get_img_with_href_message("source/github_logo.png", social_meadia["Messenger"],"Click me")
+    st.markdown(gif_html, unsafe_allow_html=True)
+
+
 with tab1s[5]:
     st.write("You can get some more works of mine by following sites: ")
     st.text(" ")
@@ -366,7 +391,7 @@ with tab1s[5]:
                 st.success("Submit Successfully, I'll respond soon and Thank you")
 
 
-
+import sys
 
 
 
