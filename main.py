@@ -310,7 +310,7 @@ with tab1s[3]:
     st.markdown("<p style='font-size: 15px;'> <i> "+"&nbsp;"*20+" Artificial Neural Network, Convolutional Neural Network, Recurrent Neural Network, LSTM etc..  </i>", unsafe_allow_html=True)
 
     st.markdown(":headphones: Computer Vision:")
-    st.markdown("<p style='font-size: 15px;'> <i> "+"&nbsp;"*20+"YOLO,  Object segmentation,Tracking and detection, Data Argumentation etc..  </i>", unsafe_allow_html=True)
+    st.markdown("<p style='font-size: 15px;'> <i> "+"&nbsp;"*20+"YOLO,  Object segmentation,Tracking and detection, Data Argumentation, Pooling Techniques etc..  </i>", unsafe_allow_html=True)
 
 
     visuvalizer=[("PowerBI",4),("Tableau",3)] 
