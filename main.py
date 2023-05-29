@@ -80,6 +80,7 @@ with tab1s[0]:
         "login_page_using_sql":"https://github.com/Jaggusms/login_page_using_sqlserver_flask",
         "login_page_using_mongodb": "https://github.com/Jaggusms/login_mongodb",
         "Messenger":"https://jaggusms-messenger-main-u03a89.streamlit.app/"
+        
     }
 
     # def img_to_bytes(img_path):
@@ -302,6 +303,16 @@ with tab1s[3]:
     st.markdown(":headphones: Machine Learning:")
     st.markdown("<p style='font-size: 15px;'> <i> "+"&nbsp;"*20+" Exploratory Data Analysis, Feature Engineering and Selection,Regression Classification Clustering and Ensemble Techniques, Hyper parameter tunning and Model Evalution etc..  </i>", unsafe_allow_html=True)
 
+    st.markdown(":headphones: Natural Language Processing:")
+    st.markdown("<p style='font-size: 15px;'> <i> "+"&nbsp;"*20+" POS,Sentiment Analysis, Doc2vec, Word2vec, TF and IDF, BERT, Transformers and SOM ,Self-Attention, Transfer Learning models etc..  </i>", unsafe_allow_html=True)
+
+    st.markdown(":headphones: Deep Learning:")
+    st.markdown("<p style='font-size: 15px;'> <i> "+"&nbsp;"*20+" Artificial Neural Network, Convolutional Neural Network, Recurrent Neural Network, LSTM etc..  </i>", unsafe_allow_html=True)
+
+    st.markdown(":headphones: Computer Vision:")
+    st.markdown("<p style='font-size: 15px;'> <i> "+"&nbsp;"*20+"YOLO,  Object segmentation,Tracking and detection, Data Argumentation etc..  </i>", unsafe_allow_html=True)
+
+
     visuvalizer=[("PowerBI",4),("Tableau",3)] 
     st.markdown(":headphones: Visuvalization: ")
     for library,rating in visuvalizer:
@@ -353,7 +364,7 @@ with tab1s[4]:
 
 
     st.markdown("#")
-    st.markdown(":musical_keyboard: <b>Title:</b>"+"&ensp;"*10 +"Mini Mesenger ",unsafe_allow_html=True)
+    st.markdown(":musical_keyboard: <b>Title:</b>"+"&ensp;"*10 +"Mini Messenger ",unsafe_allow_html=True)
     st.markdown(":violin: <b>Description:</b>"+"&ensp;"*4 +"It acts like messenger we can tranfer any text and links over the site, i used streamlit as frontend and MongoDB as Backend",unsafe_allow_html=True)
     st.markdown(":violin: <b>Skills: </b>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; Curd Operations on Mondodb and streamlit web fromwork",unsafe_allow_html=True)
     gif_html = get_img_with_href_message("source/Browser.png", social_meadia["Messenger"],"Click me")
