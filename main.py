@@ -356,7 +356,7 @@ with tab1s[4]:
     st.markdown(":musical_keyboard: <b>Title:</b>"+"&ensp;"*10 +"Mini Mesenger ",unsafe_allow_html=True)
     st.markdown(":violin: <b>Description:</b>"+"&ensp;"*4 +"It acts like messenger we can tranfer any text and links over the site, i used streamlit as frontend and MongoDB as Backend",unsafe_allow_html=True)
     st.markdown(":violin: <b>Skills: </b>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; Curd Operations on Mondodb and streamlit web fromwork",unsafe_allow_html=True)
-    gif_html = get_img_with_href_message("source/github_logo.png", social_meadia["Messenger"],"Click me")
+    gif_html = get_img_with_href_message("source/Browser.png", social_meadia["Messenger"],"Click me")
     st.markdown(gif_html, unsafe_allow_html=True)
 
 
