@@ -55,7 +55,7 @@ with tab1s[0]:
     with open("css/style.css") as f:
         st.markdown('<style>{}</style>'.format(f.read()), unsafe_allow_html=True)
     social_meadia={
-        "source/linkdin.png":"https://www.linkedin.com/in/jagadeesh-sanniboina-b9076b270/",
+        "source/linkdin.png":"https://www.linkedin.com/in/jagadeeshsanniboina/",
         "source/github_logo.png":"https://github.com/Jaggusms",
         "source/kaggle.png":"https://www.kaggle.com/jagadeeshmemories",
         "source/medium.png": "https://medium.com/@jagadeeshmk",
