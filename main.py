@@ -79,7 +79,7 @@ with tab1s[0]:
         "Price_Predictor" : "https://github.com/Jaggusms/laptop_price_pridiction",
         "login_page_using_sql":"https://github.com/Jaggusms/login_page_using_sqlserver_flask",
         "login_page_using_mongodb": "https://github.com/Jaggusms/login_mongodb",
-        "Messenger":"https://jaggusms-messenger-main-u03a89.streamlit.app/"
+        "Messenger":"https://messenger-jagadeesh.streamlit.app/"
         
     }
 
