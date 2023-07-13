@@ -114,7 +114,7 @@ with tab1s[0]:
         st.image('source/ProfilePic.png', caption=None, width=155)
         with open("source/Jagadeesh_ML_Resume.pdf", "rb") as pdf_file:
             PDFbyte = pdf_file.read()
-            st.download_button(label="📄 Download CV",data=PDFbyte,file_name="souce/Jagadeesh_ML_Resume.pdf",mime="application/octet-stream")
+            st.download_button(label="📄 Download CV",data=PDFbyte,file_name="source/JAGADEESH SANNIBOINA.pdf",mime="application/octet-stream")
        
     
     #cols = st.columns([0.5 if i in [0,1,2]  else 3 if i==7 else 1 for i in range(10) ],gap="large")
