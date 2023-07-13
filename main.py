@@ -258,10 +258,10 @@ with tab1s[2]:
         st.markdown("&ensp; &nbsp;:black_right_pointing_triangle_with_double_vertical_bar:  Understanding business objectives and developing models that help to achieve them, along with metrics to track their progress.")
         st.markdown("&ensp; &nbsp;:black_right_pointing_triangle_with_double_vertical_bar:  Participating in Data Preprocessing Techniques in order to make data useful for creating Machine Learning Models.")
         st.markdown("&ensp; &nbsp;:black_right_pointing_triangle_with_double_vertical_bar:  Answer business questions by using appropriate statistical techniques on available data.")
-        st.markdown("&ensp; &nbsp;:black_right_pointing_triangle_with_double_vertical_bar:  Building various regression and classification algorithms by using various Sklearn libraries such as Linear Regression, Logistic Regression, SVM, Decision Trees,Naive Bayes, Boosting methods such as Xgboost, Gradient Boosting.")
+        st.markdown("&ensp; &nbsp;:black_right_pointing_triangle_with_double_vertical_bar:  Building various regression and classification algorithms by using various Sklearn also ensemble methods")
         st.markdown("&ensp; &nbsp;:black_right_pointing_triangle_with_double_vertical_bar:  Expertise in working with noisy data, unbalanced datasets, Model tuning, Metrics, Feature Engineering and Data Augmentation strategies.")
         st.markdown("&ensp; &nbsp;:black_right_pointing_triangle_with_double_vertical_bar:  Analyzing the errors of the model and designing strategies to overcome them. ")
-        st.markdown("&ensp; &nbsp;:black_right_pointing_triangle_with_double_vertical_bar:  Strong verbal/written communication & data presentation skills, including an ability to effectively communicate with both business and technical teams.")
+        st.markdown("&ensp; &nbsp;:black_right_pointing_triangle_with_double_vertical_bar:  Strong verbal/written communication & data presentation skills, including an ability to effectively communicate business teams.")
         st.markdown("&ensp; &nbsp;:black_right_pointing_triangle_with_double_vertical_bar:  Be involved in technology research, capability building across newer technologies and tools in Machine Learning / Deep  Learning.")
 
         st.markdown("#")
@@ -282,8 +282,9 @@ with tab1s[2]:
         st.markdown("<b>Description:</b>  ",unsafe_allow_html=True)
         st.markdown("&ensp; &nbsp;:black_right_pointing_triangle_with_double_vertical_bar: we have create automation python code to migrate one environment to another of CTM folder &nbsp;i.e DEV to SIT vice versa etc..")
         st.markdown("&ensp; &nbsp;:black_right_pointing_triangle_with_double_vertical_bar: Generate, modify and pulls require details of the XML file  of Contol M tool by python and the process like web scraping")
-        st.markdown("&ensp; &nbsp;:black_right_pointing_triangle_with_double_vertical_bar: we need to fill color of Control M folders details in excell by comparing the old and new files of xml format and need to get text reports by comparing Elastic Scheduling Platform (ESP) text reports, ControlM xml Reports ")
-        st.markdown("&ensp; &nbsp;:black_right_pointing_triangle_with_double_vertical_bar: we have been decrease 50 percent of human efferts in Control M ")
+        st.markdown("&ensp; &nbsp;:black_right_pointing_triangle_with_double_vertical_bar: we need to fill color of Control M folders details in excel by comparing the old and new files of xml format") 
+        st.markdown("&ensp; &nbsp;:black_right_pointing_triangle_with_double_vertical_bar: need to get text reports by comparing Elastic Scheduling Platform (ESP) text reports, ControlM xml Reports ")
+        st.markdown("&ensp; &nbsp;:black_right_pointing_triangle_with_double_vertical_bar: we have been decrease 50 percent of human efforts in Control M ")
         st.markdown("#")
         st.markdown("<b>Libraries Used:</b>  Pandas, xml.etree, openpyxl ",unsafe_allow_html=True)
         
@@ -311,20 +312,20 @@ with tab1s[3]:
         #st.markdown("&nbsp;"*10+" :point_right: "+"&nbsp;"*5+library+"&nbsp;"*(25-len(library))+" :star:"*rating+"&nbsp;"*5+str(rating)+"/"+"5")
         st.markdown("&nbsp;"*20+" :pushpin: "+"&nbsp;"*5+library+"&nbsp;"*(25-len(library))+" :star:"*rating)
     st.markdown(":headphones: Machine Learning:")
-    st.markdown("<p style='font-size: 15px;'> <i> "+"&nbsp;"*20+" Exploratory Data Analysis, Feature Engineering and Selection,Regression Classification Clustering and Ensemble Techniques, Hyper parameter tunning and Model Evalution etc..  </i>", unsafe_allow_html=True)
+    st.markdown("<p style='font-size: 15px;'> <i> "+"&nbsp;"*20+" Exploratory Data Analysis, Feature Engineering, and Selection, Regression Classification Clustering and Ensemble Techniques, Hyper parameter tunning and Model Evalution etc..  </i>", unsafe_allow_html=True)
 
     st.markdown(":headphones: Natural Language Processing:")
-    st.markdown("<p style='font-size: 15px;'> <i> "+"&nbsp;"*20+" POS,Sentiment Analysis, Doc2vec, Word2vec, TF and IDF, BERT, Transformers and SOM ,Self-Attention, Transfer Learning models etc..  </i>", unsafe_allow_html=True)
+    st.markdown("<p style='font-size: 15px;'> <i> "+"&nbsp;"*20+" POS, Sentiment Analysis, Doc2vec, Word2vec, TF and IDF, BERT, Transformers, Self-Attention, Transfer Learning models etc..  </i>", unsafe_allow_html=True)
 
     st.markdown(":headphones: Deep Learning:")
-    st.markdown("<p style='font-size: 15px;'> <i> "+"&nbsp;"*20+" Artificial Neural Network, Convolutional Neural Network, Recurrent Neural Network, LSTM etc..  </i>", unsafe_allow_html=True)
+    st.markdown("<p style='font-size: 15px;'> <i> "+"&nbsp;"*20+" Artificial Neural Network, Convolutional Neural Network, Recurrent Neural Network, LSTM, etc..  </i>", unsafe_allow_html=True)
 
     st.markdown(":headphones: Computer Vision:")
-    st.markdown("<p style='font-size: 15px;'> <i> "+"&nbsp;"*20+"YOLO,  Object segmentation,Tracking and detection, Data Argumentation, Pooling Techniques etc..  </i>", unsafe_allow_html=True)
+    st.markdown("<p style='font-size: 15px;'> <i> "+"&nbsp;"*20+"YOLO,  Object segmentation, Tracking and detection, Data Argumentation, Pooling Techniques, etc..  </i>", unsafe_allow_html=True)
 
 
     visuvalizer=[("PowerBI",4),("Tableau",3)] 
-    st.markdown(":headphones: Visuvalization: ")
+    st.markdown(":headphones: Visualization: ")
     for library,rating in visuvalizer:
         #st.markdown("&nbsp;"*10+" :point_right: "+"&nbsp;"*5+library+"&nbsp;"*(25-len(library))+" :star:"*rating+"&nbsp;"*5+str(rating)+"/"+"5")
         st.markdown("&nbsp;"*20+" :waxing_crescent_moon: "+"&nbsp;"*5+library+"&nbsp;"*(25-len(library))+" :star:"*rating)
@@ -362,8 +363,8 @@ with tab1s[4]:
 
     st.markdown("#")
     st.markdown(":musical_keyboard: <b>Title:</b>"+"&ensp;"*10 +"Login Page using Flask ",unsafe_allow_html=True)
-    st.markdown(":violin: <b>Description:</b>"+"&ensp;"*4 +"i have created the sample Login page using Rest api Framework (Flask) and bakend as SQL and Mondodb as well.",unsafe_allow_html=True)
-    st.markdown(":violin: <b>Skills: </b>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;  Curd operations on SQL, MongoDB and Rest API requiests like POST,GET,PUT managements.   ",unsafe_allow_html=True)
+    st.markdown(":violin: <b>Description:</b>"+"&ensp;"*4 +" I have created the sample Login page using Rest API Framework (Flask) and backend as SQL and Mondodb as well.",unsafe_allow_html=True)
+    st.markdown(":violin: <b>Skills: </b>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;  Curd operations on SQL, MongoDB and Rest API requests like POST,GET,PUT managements.   ",unsafe_allow_html=True)
     SQL = get_img_with_href_message("source/github_logo.png", social_meadia["login_page_using_sql"],"SQL")
     mongodb = get_img_with_href_message("source/github_logo.png", social_meadia["login_page_using_mongodb"],"MongoDB")
     # col = st.columns([0.8,1.5,10],gap="small")
@@ -397,11 +398,11 @@ with tab1s[5]:
     st.markdown("<p > <center style='color:white; font-family:sans-serif; font-size: 20px;'> Let's Talk </center></p>", unsafe_allow_html=True)
     with st.form("form 3",clear_on_submit=True):
         c1,c2=st.columns(2)
-        fn=c1.text_input(label="Fisrt Name",placeholder="Please enter First Name")
+        fn=c1.text_input(label="First Name",placeholder="Please enter First Name")
         sn=c2.text_input(label="Second Name",placeholder="Please enter Second Name")
         em=c1.text_input(label="Mail",placeholder="Please enter valid Email")
         phone=c2.text_input(label="Mobile",placeholder="Please enter Mobile Number")
-        message=st.text_area(label="Message",placeholder="Suggistion on this website or for me")
+        message=st.text_area(label="Message",placeholder="Suggestion on this website or for me")
         out=st.form_submit_button("Submit")
         if out:
             if fn=="" or sn=="":
