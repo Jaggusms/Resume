@@ -339,18 +339,19 @@ with tab1s[3]:
     
 
 with tab1s[4]:
-    st.markdown("##")
-    st.markdown(":musical_keyboard: <b>Title:</b>"+"&ensp;"*10 +"Digital Resume",unsafe_allow_html=True)
-    st.markdown(":violin: <b>Description:</b>"+"&ensp;"*4 +"This digital resume was developed with streamlit library in python. Streamlit is an open-source app framework for Machine Learning and Data Science teams. Create beautiful web apps in minutes.",unsafe_allow_html=True)
-    st.markdown(":violin: <b>Libraries Used:</b>&ensp; streanlit, PIL ",unsafe_allow_html=True)
-    gif_html = get_img_with_href_message("source/github_logo.png", social_meadia["resume_git"],"Click me")
+    st.markdown("#")
+    st.markdown(":musical_keyboard: <b>Title:</b>"+"&ensp;"*10 +"Mini Messenger ",unsafe_allow_html=True)
+    st.markdown(":violin: <b>Description:</b>"+"&ensp;"*4 +"It acts like messenger we can tranfer any text and links over the site, i used streamlit as frontend and MongoDB as Backend",unsafe_allow_html=True)
+    st.markdown(":violin: <b>Skills: </b>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; Curd Operations on Mondodb and streamlit web fromwork",unsafe_allow_html=True)
+    gif_html = get_img_with_href_message("source/Browser.png", social_meadia["Messenger"],"Click me")
     st.markdown(gif_html, unsafe_allow_html=True)
+   
 
     st.markdown("#")
-    st.markdown(":musical_keyboard: <b>Title:</b>"+"&ensp;"*10 +"Money Laundering System ",unsafe_allow_html=True)
-    st.markdown(":violin: <b>Description:</b>"+"&ensp;"*4 +"Money Laundering System is a classification problem. Aspect of financial transaction, the challenge is to predict whether the transaction is fraud or not. ",unsafe_allow_html=True)
-    st.markdown(":violin: <b>Skills: </b>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; data preprocessing, Feature Engineering, Model Building, Model Deployment.. ",unsafe_allow_html=True)
-    gif_html = get_img_with_href_message("source/github_logo.png", social_meadia["moneylanduring_git"],"Click me")
+    st.markdown(":musical_keyboard: <b>Title:</b>"+"&ensp;"*10 +"Image Style Adding ",unsafe_allow_html=True)
+    st.markdown(":violin: <b>Description:</b>"+"&ensp;"*4 +"This project is based on adding our new styles of original images like artists. It is based on the deep learning concept i.e., Neural Style Transfer ,I used Streamlit as frontend and TensorFlow hub pre-trained model ",unsafe_allow_html=True)
+    #st.markdown(":violin: <b>Skills: </b>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; data preprocessing, Feature Engineering, Model Building, Model Deployment.. ",unsafe_allow_html=True)
+    gif_html = get_img_with_href_message("source/Browser.png", "https://nst-dl.streamlit.app/","Click me")
     st.markdown(gif_html, unsafe_allow_html=True)
 
     st.markdown("#")
@@ -373,13 +374,13 @@ with tab1s[4]:
     #print()
     st.markdown(f"<p>{SQL}{mongodb}</p>" , unsafe_allow_html=True)
 
-
-    st.markdown("#")
-    st.markdown(":musical_keyboard: <b>Title:</b>"+"&ensp;"*10 +"Mini Messenger ",unsafe_allow_html=True)
-    st.markdown(":violin: <b>Description:</b>"+"&ensp;"*4 +"It acts like messenger we can tranfer any text and links over the site, i used streamlit as frontend and MongoDB as Backend",unsafe_allow_html=True)
-    st.markdown(":violin: <b>Skills: </b>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; Curd Operations on Mondodb and streamlit web fromwork",unsafe_allow_html=True)
-    gif_html = get_img_with_href_message("source/Browser.png", social_meadia["Messenger"],"Click me")
+     st.markdown("##")
+    st.markdown(":musical_keyboard: <b>Title:</b>"+"&ensp;"*10 +"Digital Resume",unsafe_allow_html=True)
+    st.markdown(":violin: <b>Description:</b>"+"&ensp;"*4 +"This digital resume was developed with streamlit library in python. Streamlit is an open-source app framework for Machine Learning and Data Science teams. Create beautiful web apps in minutes.",unsafe_allow_html=True)
+    st.markdown(":violin: <b>Libraries Used:</b>&ensp; streanlit, PIL ",unsafe_allow_html=True)
+    gif_html = get_img_with_href_message("source/github_logo.png", social_meadia["resume_git"],"Click me")
     st.markdown(gif_html, unsafe_allow_html=True)
+    
 
 
 with tab1s[5]:
