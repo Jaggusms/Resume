@@ -265,7 +265,7 @@ with tab1s[2]:
         st.markdown("&ensp; &nbsp;:black_right_pointing_triangle_with_double_vertical_bar:  Be involved in technology research, capability building across newer technologies and tools in Machine Learning / Deep  Learning.")
 
         st.markdown("#")
-        st.markdown("Project 3 ")
+        st.markdown("Project 2 ")
         st.markdown("<b>Name:</b> Recommendation system for ticketing tool",unsafe_allow_html=True)
         st.markdown("<b>Client:</b> Anthem",unsafe_allow_html=True)
         st.markdown("<b>Description:</b>  ",unsafe_allow_html=True)
