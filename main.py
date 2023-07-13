@@ -374,7 +374,7 @@ with tab1s[4]:
     #print()
     st.markdown(f"<p>{SQL}{mongodb}</p>" , unsafe_allow_html=True)
 
-     st.markdown("##")
+    st.markdown("##")
     st.markdown(":musical_keyboard: <b>Title:</b>"+"&ensp;"*10 +"Digital Resume",unsafe_allow_html=True)
     st.markdown(":violin: <b>Description:</b>"+"&ensp;"*4 +"This digital resume was developed with streamlit library in python. Streamlit is an open-source app framework for Machine Learning and Data Science teams. Create beautiful web apps in minutes.",unsafe_allow_html=True)
     st.markdown(":violin: <b>Libraries Used:</b>&ensp; streanlit, PIL ",unsafe_allow_html=True)
