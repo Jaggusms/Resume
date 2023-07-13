@@ -264,9 +264,19 @@ with tab1s[2]:
         st.markdown("&ensp; &nbsp;:black_right_pointing_triangle_with_double_vertical_bar:  Strong verbal/written communication & data presentation skills, including an ability to effectively communicate with both business and technical teams.")
         st.markdown("&ensp; &nbsp;:black_right_pointing_triangle_with_double_vertical_bar:  Be involved in technology research, capability building across newer technologies and tools in Machine Learning / Deep  Learning.")
 
+        st.markdown("#")
+        st.markdown("Project 3 ")
+        st.markdown("<b>Name:</b> Recommendation system for ticketing tool",unsafe_allow_html=True)
+        st.markdown("<b>Client:</b> Anthem",unsafe_allow_html=True)
+        st.markdown("<b>Description:</b>  ",unsafe_allow_html=True)
+        st.markdown("&ensp; &nbsp;:black_right_pointing_triangle_with_double_vertical_bar: any new ticket will come, the resolution time is taking a lot of time. So, we build a similar ticket recommendation system..")
+        st.markdown("&ensp; &nbsp;:black_right_pointing_triangle_with_double_vertical_bar: We collected all the tickets data like name, description and summary, and comments")
+        st.markdown("&ensp; &nbsp;:black_right_pointing_triangle_with_double_vertical_bar: created a similarity matrix so that if a new ticket comes. They just enter the ticket number, The algorithm will clean,process")
+        st.markdown("&ensp; &nbsp;:black_right_pointing_triangle_with_double_vertical_bar: create Matrix with linear kernel/ cosine similarity and fetch the top 10 similar tickets in the entire database")
+        
         
         st.markdown("#")
-        st.markdown("Project 2 ")
+        st.markdown("Project 3 ")
         st.markdown("<b>Name:</b> Automation for Control-M by python",unsafe_allow_html=True)
         st.markdown("<b>Client:</b> Anthem",unsafe_allow_html=True)
         st.markdown("<b>Description:</b>  ",unsafe_allow_html=True)
