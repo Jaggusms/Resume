@@ -249,7 +249,7 @@ with tab1s[2]:
         st.markdown(f"<p> {carelon_linkdin} &nbsp; &nbsp;  {carelon_glassdoor }</p>", unsafe_allow_html=True)
     with cols[0]:
         st.markdown("##")
-        st.markdown(":office: <b style='font-size:25px'>Carelon Global Solutions</b> (3rd June-2021- Till Date)",unsafe_allow_html=True)
+        st.markdown(":office: <b style='font-size:25px'>Carelon Global Solutions</b> (3rd June-2021- 28th July 2023)",unsafe_allow_html=True)
         st.markdown("#")
         st.markdown("Project 1 ")
         st.markdown("<b>Name:</b> Machine Learning Data Model building",unsafe_allow_html=True)
