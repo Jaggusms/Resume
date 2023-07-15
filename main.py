@@ -340,12 +340,12 @@ with tab1s[3]:
 
 with tab1s[4]:
     st.markdown("#")
-    st.markdown(":musical_keyboard: <b>Title:</b>"+"&ensp;"*10 +"Mini Messenger ",unsafe_allow_html=True)
-    st.markdown(":violin: <b>Description:</b>"+"&ensp;"*4 +"It acts like messenger we can tranfer any text and links over the site, i used streamlit as frontend and MongoDB as Backend",unsafe_allow_html=True)
-    st.markdown(":violin: <b>Skills: </b>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; Curd Operations on Mondodb and streamlit web fromwork",unsafe_allow_html=True)
-    gif_html = get_img_with_href_message("source/Browser.png", social_meadia["Messenger"],"Click me")
+    st.markdown(":musical_keyboard: <b>Title:</b>"+"&ensp;"*10 +"Sentiment Analysis ",unsafe_allow_html=True)
+    st.markdown(":violin: <b>Description:</b>"+"&ensp;"*4 +"We can find whether the sentence is positive or negative by using the pre-trained model from Hugging Face ",unsafe_allow_html=True)
+    st.markdown(":violin: <b>Skills: </b>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; I used the transformer pipeline library from hugging face as the pre-trained model and streamlet as the deployment ",unsafe_allow_html=True)
+    gif_html = get_img_with_href_message("source/Browser.png", "https://nst-dl.streamlit.app/","Click me")
     st.markdown(gif_html, unsafe_allow_html=True)
-   
+
 
     st.markdown("#")
     st.markdown(":musical_keyboard: <b>Title:</b>"+"&ensp;"*10 +"Image Style Adding ",unsafe_allow_html=True)
@@ -353,7 +353,14 @@ with tab1s[4]:
     #st.markdown(":violin: <b>Skills: </b>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; data preprocessing, Feature Engineering, Model Building, Model Deployment.. ",unsafe_allow_html=True)
     gif_html = get_img_with_href_message("source/Browser.png", "https://nst-dl.streamlit.app/","Click me")
     st.markdown(gif_html, unsafe_allow_html=True)
-
+    
+    st.markdown("#")
+    st.markdown(":musical_keyboard: <b>Title:</b>"+"&ensp;"*10 +"Mini Messenger ",unsafe_allow_html=True)
+    st.markdown(":violin: <b>Description:</b>"+"&ensp;"*4 +"It acts like messenger we can tranfer any text and links over the site, i used streamlit as frontend and MongoDB as Backend",unsafe_allow_html=True)
+    st.markdown(":violin: <b>Skills: </b>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; Curd Operations on Mondodb and streamlit web fromwork",unsafe_allow_html=True)
+    gif_html = get_img_with_href_message("source/Browser.png", social_meadia["Messenger"],"Click me")
+    st.markdown(gif_html, unsafe_allow_html=True)
+    
     st.markdown("#")
     st.markdown(":musical_keyboard: <b>Title:</b>"+"&ensp;"*10 +"Laptop Price Predictor ",unsafe_allow_html=True)
     st.markdown(":violin: <b>Description:</b>"+"&ensp;"*4 +"Laptop Price Prediction is a regression problem. Given the training instances extracted from various websites we are expected to predict the price of any laptop.",unsafe_allow_html=True)
