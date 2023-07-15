@@ -343,7 +343,7 @@ with tab1s[4]:
     st.markdown(":musical_keyboard: <b>Title:</b>"+"&ensp;"*10 +"Sentiment Analysis ",unsafe_allow_html=True)
     st.markdown(":violin: <b>Description:</b>"+"&ensp;"*4 +"We can find whether the sentence is positive or negative by using the pre-trained model from Hugging Face ",unsafe_allow_html=True)
     st.markdown(":violin: <b>Skills: </b>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; I used the transformer pipeline library from hugging face as the pre-trained model and streamlet as the deployment ",unsafe_allow_html=True)
-    gif_html = get_img_with_href_message("source/Browser.png", "https://nst-dl.streamlit.app/","Click me")
+    gif_html = get_img_with_href_message("source/Browser.png", "https://sentiment-analysis-jagadeesh.streamlit.app/","Click me")
     st.markdown(gif_html, unsafe_allow_html=True)
 
 
