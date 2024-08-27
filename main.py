@@ -90,7 +90,7 @@ with tab1s[0]:
 
 
     #col1, col2 = st.columns([3, 1],gap='small')
-    col1,col2= st.columns([4,2],gap="small")
+    col1,col2= st.columns([5,3],gap="small")
     with col1:
         st.markdown("<p style='font-family:sans-serif; font-size: 20px;'>Hello, I'm</p>", unsafe_allow_html=True)
         st.markdown('<p style="font-family:sans-serif; font-size: 42px;"><i>JAGADEESH SANNIBOINA<i></p>', unsafe_allow_html=True)
