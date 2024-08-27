@@ -111,7 +111,7 @@ with tab1s[0]:
         
     with col2:
         #st.markdown(img_to_html('source/ProfilePic.png'), unsafe_allow_html=True)
-        st.image('source/ProfilePic.png', caption=None, width=155)
+        st.image('source/ProfilePic.png', caption=None, width=150)
         with open("source/JAGADEESH SANNIBOINA.pdf", "rb") as pdf_file:
             PDFbyte = pdf_file.read()
             st.download_button(label="📄 Download CV",data=PDFbyte,file_name="JAGADEESH_SANNIBOINA.pdf",mime="application/octet-stream")
