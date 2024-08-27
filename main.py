@@ -134,9 +134,7 @@ with tab1s[0]:
     cols=st.columns([0.25,1,2],gap="small")
     cols[1].image("source/ml.png",width=200)
     cols[2].markdown("<p style='font-family:sans-serif; font-size: 25px;'><b>Bio:<b> </p>", unsafe_allow_html=True)
-    cols[2].markdown(''':arrow_right: I am a **Machine Learning Engineer** who insights into _Deep Learning, Neural Networks, Computer Vision and Natural Language Processing_.
-                    I am extending myself towards Could, Data Engineering and Science to archive a full stack Machine Learner. 
-                    I am Multitasking and good Problem Solver.''')
+    cols[2].markdown(''':arrow_right: Dedicated professional transitioning into the field of ***Computer Vision***, with a strong foundation in programming, data analysis, and machine learning. Building expertise in image processing, object detection, and deep learning using Python, OpenCV, and TensorFlow. Eager to apply analytical skills and technical knowledge to develop innovative solutions in computer vision. Committed to continuous learning and contributing to advancements in this dynamic field.''')
         #cols=st.columns(len(social_meadia),gap="small")
 
     #cols = st.columns(5,gap="large")
