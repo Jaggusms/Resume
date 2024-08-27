@@ -90,7 +90,7 @@ with tab1s[0]:
 
 
     #col1, col2 = st.columns([3, 1],gap='small')
-    col1,col2= st.columns([3,2],gap="small")
+    col1,col2= st.columns([4,2],gap="small")
     with col1:
         st.markdown("<p style='font-family:sans-serif; font-size: 20px;'>Hello, I'm</p>", unsafe_allow_html=True)
         st.markdown('<p style="font-family:sans-serif; font-size: 42px;"><i>JAGADEESH SANNIBOINA<i></p>', unsafe_allow_html=True)
@@ -111,7 +111,7 @@ with tab1s[0]:
         
     with col2:
         #st.markdown(img_to_html('source/ProfilePic.png'), unsafe_allow_html=True)
-        st.image('source/ProfilePic.png', caption=None, width=150)
+        st.image('source/ProfilePic.png', caption=None, width=155)
         with open("source/JAGADEESH SANNIBOINA.pdf", "rb") as pdf_file:
             PDFbyte = pdf_file.read()
             st.download_button(label="📄 Download CV",data=PDFbyte,file_name="JAGADEESH_SANNIBOINA.pdf",mime="application/octet-stream")
