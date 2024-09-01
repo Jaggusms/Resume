@@ -256,7 +256,7 @@ with tab1s[2]:
     with cols[0]:
         st.markdown("##")
         st.markdown(":office: <b style='font-size:25px'>LTIMindtree</b> (17th Oct-2023- 23rd Aug-2024)",unsafe_allow_html=True)
-        st.markdown("#")
+        st.markdown("<br>  ",unsafe_allow_html=True)
         st.markdown("Project 1 ")
         st.markdown("<b>Name:</b> Forecast models Implementation",unsafe_allow_html=True)
         st.markdown("<b>Client:</b> Fosfor",unsafe_allow_html=True)
@@ -269,7 +269,7 @@ with tab1s[2]:
 
         st.markdown("#")
         st.markdown(":office: <b style='font-size:25px'>Carelon Global Solutions</b> (3rd June-2021- 28th July 2023)",unsafe_allow_html=True)
-        st.markdown("#")
+        st.markdown("<br>  ",unsafe_allow_html=True)
         st.markdown("Project 2 ")
         st.markdown("<b>Name:</b> Privacy Assignment Using RAG Model",unsafe_allow_html=True)
         st.markdown("<b>Client:</b> Anthem",unsafe_allow_html=True)
