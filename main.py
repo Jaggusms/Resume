@@ -246,6 +246,8 @@ with tab1s[2]:
         carelon_linkdin = get_img_with_href("source/linkdin.png", social_meadia["linkdin_carelon"],20)
         carelon_glassdoor=get_img_with_href("source/glassdoor.png", social_meadia["glassdoor_carelon"],20)
         st.markdown(f"<p> {carelon_linkdin} &nbsp; &nbsp;  {carelon_glassdoor }</p>", unsafe_allow_html=True)
+        for i in range(10):
+            st.markdown("<br>  ",unsafe_allow_html=True)
         
         gif_html = get_img_with_href("source/carelon.jpg", social_meadia["source/carelon.jpg"],100)
         st.markdown(gif_html, unsafe_allow_html=True)
