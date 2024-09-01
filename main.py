@@ -242,7 +242,7 @@ with tab1s[2]:
     cols = st.columns([4,1.5],gap="small")
     with cols[1]:
         st.markdown("##")
-        gif_html = get_img_with_href("source/LTIMindtree.jpg", social_meadia["ltimindtree"],100)
+        gif_html = get_img_with_href("source/LTIMindtree.jpg", social_meadia["ltimindtree"],150)
         st.markdown(gif_html, unsafe_allow_html=True)
         st.markdown("Follow on ")
         carelon_linkdin = get_img_with_href("source/linkdin.png", social_meadia["ltimindtree_linkdin"],20)
