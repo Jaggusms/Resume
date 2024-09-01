@@ -64,6 +64,7 @@ with tab1s[0]:
         "source/hacker_rank.png": "https://www.hackerrank.com/sanniboinajagad1",
         "source/hacker_earth.png":"https://www.hackerearth.com/@jagadeesh220",
         "source/facebook.png": "https://www.facebook.com/jagadeesh.sanniboina.3/",
+        "source/leetcode.png": "https://leetcode.com/u/sanniboinajagadeesh/",
         "source/insta.png":"https://www.instagram.com/forgot_your_login_details/",
         "source/MITS.jpg": "https://mits.ac.in/",
         "source/APRJC.png" : "https://aprs.apcfss.in/",
@@ -104,10 +105,10 @@ with tab1s[0]:
         gif_html = get_img("source/location.png",". Tirupati, AP, India")
         st.markdown(gif_html, unsafe_allow_html=True)
         linkdin = get_img_with_href("source/linkdin.png", social_meadia["source/linkdin.png"],25)
-        #insta = get_img_with_href("source/insta.png", social_meadia["source/insta.png"],25)
+        leetcode = get_img_with_href("source/leetcode.png", social_meadia["source/leetcode.png"],25)
         gihub = get_img_with_href("source/github_logo.png", social_meadia["source/github_logo.png"],25)
         kagle=get_img_with_href("source/kaggle.png", social_meadia["source/kaggle.png"],25)
-        st.markdown(f"<p> {linkdin} {gihub} {kagle}</p>", unsafe_allow_html=True)
+        st.markdown(f"<p> {linkdin} {gihub} {kagle} {leetcode}</p>", unsafe_allow_html=True)
         
     with col2:
         #st.markdown(img_to_html('source/ProfilePic.png'), unsafe_allow_html=True)
@@ -392,7 +393,7 @@ with tab1s[5]:
     st.write("You can get some more works of mine by following sites: ")
     st.text(" ")
     string=""
-    for idx, data in enumerate(list(social_meadia.items())[3:9]):
+    for idx, data in enumerate(list(social_meadia.items())[3:8]):
         gif_html = get_img_with_href(data[0], social_meadia[data[0]],25)
         string +=gif_html
         
