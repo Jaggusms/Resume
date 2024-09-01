@@ -248,13 +248,26 @@ with tab1s[2]:
         st.markdown(f"<p> {carelon_linkdin} &nbsp; &nbsp;  {carelon_glassdoor }</p>", unsafe_allow_html=True)
     with cols[0]:
         st.markdown("##")
+        st.markdown(":office: <b style='font-size:25px'>LTIMindtree</b> (17th Oct-2023- 23rd Aug-2024)",unsafe_allow_html=True)
+        st.markdown("#")
+        st.markdown("Project 1 ")
+        st.markdown("<b>Name:</b> Forecast models Implementation",unsafe_allow_html=True)
+        st.markdown("<b>Client:</b> Fosfor",unsafe_allow_html=True)
+        st.markdown("<b>Description:</b>  ",unsafe_allow_html=True)
+        st.markdown("&ensp; &nbsp;:black_right_pointing_triangle_with_double_vertical_bar:  Fosfor is tool that having one of the components  as decision designer which is having the capability to generate narrative based upon our question and it will be generate meaning full insights.")
+        st.markdown("&ensp; &nbsp;:black_right_pointing_triangle_with_double_vertical_bar:  Develop the runtime base forecast models like ARIMA-X, VAR & VARMAX, Neural Network model in order to get the required future values")
+        st.markdown("&ensp; &nbsp;:black_right_pointing_triangle_with_double_vertical_bar:  Integrate these models in restful Api using fastAPi to get the requests, response and CICD pipeline via Jenkins")
+        st.markdown("&ensp; &nbsp;:black_right_pointing_triangle_with_double_vertical_bar:  Creating the orchestration using airflow and maintain models via docker and kubenetes pods to increase scaling")
+
+
+        
         st.markdown(":office: <b style='font-size:25px'>Carelon Global Solutions</b> (3rd June-2021- 28th July 2023)",unsafe_allow_html=True)
         st.markdown("#")
         st.markdown("Project 2 ")
         st.markdown("<b>Name:</b> Privacy Assignment Using RAG Model",unsafe_allow_html=True)
         st.markdown("<b>Client:</b> Anthem",unsafe_allow_html=True)
         st.markdown("<b>Description:</b>  ",unsafe_allow_html=True)
-        st.markdown("&ensp; &nbsp;:black_right_pointing_triangle_with_double_vertical_bar:  Objective: Developed a robust solution for the privacy assignment of LOINC codes to protect sensitive health information..")
+        st.markdown("&ensp; &nbsp;:black_right_pointing_triangle_with_double_vertical_bar:  Objective: Developed a robust solution for the privacy assignment of LOINC codes to protect sensitive health information.")
         st.markdown("&ensp; &nbsp;:black_right_pointing_triangle_with_double_vertical_bar:  Technologies Used: RAG (Retrieval-Augmented Generation) model, bge-env 1.5, Mistral 8*7B model.")
         st.markdown("&ensp; &nbsp;:black_right_pointing_triangle_with_double_vertical_bar:  Project Details: Data Collection and Documentation: Gathered comprehensive information on sensitive and privacy-related health categories, including HIV, sexual transmission, substance abuse disorder, drug rehabilitation, abortion.")
         st.markdown("&ensp; &nbsp;:black_right_pointing_triangle_with_double_vertical_bar:  Building various regression and classification algorithms by using various Sklearn also ensemble methods")
