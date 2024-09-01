@@ -80,8 +80,10 @@ with tab1s[0]:
         "Price_Predictor" : "https://github.com/Jaggusms/laptop_price_pridiction",
         "login_page_using_sql":"https://github.com/Jaggusms/login_page_using_sqlserver_flask",
         "login_page_using_mongodb": "https://github.com/Jaggusms/login_mongodb",
-        "Messenger":"https://messenger-jagadeesh.streamlit.app/"
-        
+        "Messenger":"https://messenger-jagadeesh.streamlit.app/",
+        "ltimindtree_linkdin":"https://www.linkedin.com/company/ltimindtree/posts/?feedView=all",
+        "LTIMindtree_glassdor":"https://www.glassdoor.co.in/Reviews/LTIMindtree-Reviews-E8441464.htm",
+        "ltimindtree": "https://www.ltimindtree.com/"
     }
 
     # def img_to_bytes(img_path):
