@@ -97,7 +97,7 @@ with tab1s[0]:
     with col1:
         st.markdown("<p style='font-family:sans-serif; font-size: 20px;'>Hello, I'm</p>", unsafe_allow_html=True)
         st.markdown('<p style="font-family:sans-serif; font-size: 42px;"><i>JAGADEESH SANNIBOINA<i></p>', unsafe_allow_html=True)
-        st.write('Machine Learning Engineer | Data Scientist')
+        st.write('Computer Vision | Machine Learning Engineer ')
         #st.markdown('''<style>[data-testid=column]:nth-of-type(1) [data-testid=stVerticalBlock]{gap: 1rem;}</style>''', unsafe_allow_html=True)
         st. write("--")
         gif_html = get_img("source/mail1.png",". sanniboinajagadeesh@gmail.com")
